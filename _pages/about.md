@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://www.linkedin.com/in/alejandralopezgalan/'>LinkedIn</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
