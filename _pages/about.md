@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Oaxaca, Mexico</p>
+    <p>Hi from Oaxaca, Mexico</p>
  
 
 news: false # includes a list of news items
