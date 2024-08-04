@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.linkedin.com/in/alejandralopezgalan/'>LinkedIn</a>. 
+subtitle: <a href="https://www.linkedin.com/in/alejandralopezgalan/">LinkedIn</a>. 
 
 profile:
   align: right
