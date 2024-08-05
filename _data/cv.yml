@@ -8,13 +8,8 @@
     - name: Summary
       value: Highly motivated and results-oriented PhD graduate with a strong foundation in data analysis, visualisation, and research methodologies. Eager to leverage expertise in Python programming, statistical analysis, SQL, and data visualization tools to transition into a Data Analyst role. Skilled in data collection, cleaning, and manipulation, with a passion for uncovering insights from complex datasets.
     - name: Languages
-      value: Spanish, English
-    - name: LinkedIn
-      value: <a href="https://www.linkedin.com/in/alejandralopezgalan/">Profile</a>
-    - name: Learning
-      value: <a href="https://www.datacamp.com/portfolio/alejandralopezgalan">DataCamp Portfolio ad Learning journey</a>
-    - name: Github
-      value: <a href="https://github.com/alejandralopezgalan">My Github</a>
+      value: Spanish, and English
+
 
 
 - title: Education
