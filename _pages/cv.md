@@ -5,7 +5,7 @@ title: Resume
 nav: true
 nav_order: 5
 cv_pdf: resume_alg.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+description: To download a pdf version of my resume, clic on the icon to the left.
 toc:
   sidebar: left
 ---
