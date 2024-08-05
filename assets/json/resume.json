@@ -4,27 +4,40 @@
     "label": "",
     "image": "",
     "email": "lopez.galan.alejadra@gmail.com",
-    "phone": "",
-    "linkedIn": " https://www.linkedin.com/in/alejandralopezgalan/",
+    "Location": "Oaxaca, Mexico",
     "summary": "Highly motivated and results-oriented PhD graduate with a strong foundation in data analysis, visualisation, and research methodologies. Eager to leverage expertise in Python programming, statistical analysis, SQL, and data visualization tools to transition into a Data Analyst role. Skilled in data collection, cleaning, and manipulation, with a passion for uncovering insights from complex datasets.",
-    "profiles": [
+  }, 
+  "Websites and Portfolio": [
       {
-        "network": "Twitter",
-        "username": "",
-        "url": ""
+        "title": "Website",
+        "url": "https://alejandralopezgalan.github.io",
+        "icon": "fa-brands fa-github"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/alejandralopezgalan/",
+        "icon": "fa-brands fa-linkedin"
+      },
+    {
+        "title": "DataCamp Portflio",
+        "url": "https://www.datacamp.com/portfolio/alejandralopezgalan",
+        "icon": "fa-solid fa-briefcase"
+      },
+     {
+        "title": "Github",
+        "url": "https://github.com/alejandralopezgalan",
+        "icon": "fa-brands fa-square-github"
       }
-    ]
-  },
+    ],
   "work": [
     {
       "name": "Instituto Blaise Pascale",
       "position": "High School Science Teacher",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
+      "startDate": "2021-01",
+      "endDate": "Current",
+      "summary": "Created comprehensive Excel training modules to teach students how to analyse geographical data aligned with curriculum standards",
+    }, 
+    
   ],
   "volunteer": [
     {
