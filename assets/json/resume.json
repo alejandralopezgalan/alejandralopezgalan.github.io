@@ -33,11 +33,10 @@
     {
       "name": "Instituto Blaise Pascale",
       "position": "High School Science Teacher",
-      "startDate": "2021-01",
-      "endDate": "Current",
+      "startDate": "2021-01-01",
+      "endDate": "204-08-01",
       "summary": "Created comprehensive Excel training modules to teach students how to analyse geographical data aligned with curriculum standards",
-    }, 
-    
+    }  
   ],
   "volunteer": [
     {
