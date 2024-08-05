@@ -4,11 +4,23 @@
     - name: Full Name
       value: Alejandra Lopez Galan
     - name: Email
-      value: <a href="mailto:lopez.galan.alejandra@gmail.com">
+      value: lopez.galan.alejandra@gmail.com
     - name: Summary
       value: Highly motivated and results-oriented PhD graduate with a strong foundation in data analysis, visualisation, and research methodologies. Eager to leverage expertise in Python programming, statistical analysis, SQL, and data visualization tools to transition into a Data Analyst role. Skilled in data collection, cleaning, and manipulation, with a passion for uncovering insights from complex datasets.
     - name: Languages
       value: Spanish, English
+      
+- title: Websites and Portfolios
+  type: map
+  contents:
+    - name: LinkedIn
+      value: <a href="https://www.linkedin.com/in/alejandralopezgalan/">Add me on LinkedIn</a>
+    - name: Portfolio
+      value: <a href="https://www.datacamp.com/portfolio/alejandralopezgalan">DataCamp Portfolio</a>
+    - name: Github
+      value: <a href="https://github.com/alejandralopezgalan">My Github/a>
+
+- title: Education
 
 - title: Education
   type: time_table
