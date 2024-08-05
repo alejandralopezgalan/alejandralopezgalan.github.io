@@ -1,8 +1,18 @@
 {
-  "general": {
+  "basics": {
     "name": "Alejandra Lopez Galan",
-    "email": "albert@einstein.com",
+    "label": "",
+    "image": "",
+    "email": "lopez.galan.alejandra@gmail.com",
+    "phone": "",
+    "url": "https://alshedivat.github.io/al-folio/",
     "summary": "Highly motivated and results-oriented PhD graduate with a strong foundation in data analysis, visualisation, and research methodologies. Eager to leverage expertise in Python programming, statistical analysis, SQL, and data visualization tools to transition into a Data Analyst role. Skilled in data collection, cleaning, and manipulation, with a passion for uncovering insights from complex datasets.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "MX",
+      "region": ""
     },
     "profiles": [
       {
