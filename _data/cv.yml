@@ -19,8 +19,8 @@
 - title: Experience
   type: time_table
   contents:
-    - title: High School Science Teacher. Mexico.
-      institution: Instituto Blaise Pascale
+    - title: High School Science Teacher
+      institution: Instituto Blaise Pascale. Mexico
       year: 05/2022 - Current
       description:
         - Created comprehensive Excel training modules to teach students how to analyse geographical data aligned with curriculum standards
@@ -41,36 +41,29 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Doctor of Philosophy. Neuroethology
+      institution: Queensland Brain Institute. The University of Queensland. Australia
+      year: 2020
 
+    - title: Bachelor of Science. Marine Biology
+      institution: Universidad del Mar. Mexico
+      year: 2014
 
-
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Technical Skills
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - R programming language
+        - Statistical analysis (descriptive, predictive, parametric, and non-parametric)
+    - title: Data Management
       items:
-        - Description 1.
-        - Description 2.
+        - PostgreSQL
+        - Spreadsheets (Excel and Google Sheets)
+    - title: Data visualization
+      items:
+        - PowerBI
+        - RStudio
 
 - title: Other Interests
   type: list
