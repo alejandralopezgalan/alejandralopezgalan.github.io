@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HR Metrics Monitoring and Attrition Analysis
-description: A guided project from DataCamp [Data Analyst in Power BI track](https://app.datacamp.com/learn/career-tracks/data-analyst-in-power-bi) about HR analytics
+description: A guided project from DataCamp Data Analyst in Power BI track about HR analytics
 img: assets/img/12.jpg
 importance: 1
 category: work
