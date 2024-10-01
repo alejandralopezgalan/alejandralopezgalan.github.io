@@ -76,13 +76,13 @@ The analysis is based on HR data from Atlas Labs, covering demographics, tenure,
 Power BI, DAX functions, Data Modelling, and Exploratory Data Analysis (EDA).
 
 ### Data Understanding
-Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata page](metadata.md).
+Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata page](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/metadata.md).
 
 ### Data Cleaning
-I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](metadata.md). 
+I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/metadata.md). 
 
 ### Data Transformation
-I created a new date calculated table using the DAX code from [DimDate.txt](DimDate.txt) file.
+I created a new date calculated table using the DAX code from [DimDate.txt](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/DimDate.txt) file.
 
 ![Renaming the columns](https://github.com/user-attachments/assets/02f48e75-bc60-4993-9c19-d1053a691830)
 
@@ -93,6 +93,11 @@ I created a new date calculated table using the DAX code from [DimDate.txt](DimD
 
 
 <br/>This image shows the final data model used for the analysis.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/modelo-hr-powerbi.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ![The final model ](https://github.com/user-attachments/assets/cdd1d69a-a91d-40c3-a34c-f40762366476)
 
