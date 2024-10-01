@@ -8,11 +8,6 @@ category: work
 related_publications: false
 ---
 
-# HR Metrics Monitoring and Attrition Analysis
-
-**A guided project from DataCamp´s career track: [Data Analyst in Power BI](https://app.datacamp.com/learn/career-tracks/data-analyst-in-power-bi)**
-
-
 ![HR](https://github.com/user-attachments/assets/429b7a45-d183-40f9-8207-8caa972cafee)
 
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
