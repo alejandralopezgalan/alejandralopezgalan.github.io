@@ -2,7 +2,7 @@
 layout: page
 title: HR Metrics Monitoring and Attrition Analysis
 description: A guided project on HR analytics
-img: assets/img/12.jpg
+img: assets/img/hr-powerbi.png
 importance: 1
 category: work
 related_publications: false
@@ -99,8 +99,6 @@ I created a new date calculated table using the DAX code from [DimDate.txt](http
     </div>
 </div>
 
-![The final model ](https://github.com/user-attachments/assets/cdd1d69a-a91d-40c3-a34c-f40762366476)
-
 ### DAX measures
 I created a table with all the measures required for the analysis, and I used DAX formulas to create these measures.
 
@@ -133,16 +131,34 @@ I created a table with all the measures required for the analysis, and I used DA
 I created a report in Power BI to showcase the results of the analysis. 
 
 _Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
-![overview](https://github.com/user-attachments/assets/412efe7f-5a8c-42bc-9355-c76717d15257)
+<br/>This image shows the final data model used for the analysis.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/overview.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 <br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
-![demographics](https://github.com/user-attachments/assets/4277dd2e-42fc-4204-b166-aca2dae62712)
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/demographics.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 <br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
-![performance-tracker](https://github.com/user-attachments/assets/e04c65b2-80fa-4895-a99d-75b5199c69af)
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/performance.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 <br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
-![attrition](https://github.com/user-attachments/assets/021ec719-3e66-4ebd-955a-c9354269a3d4)
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/attrition.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 
 ---
 
