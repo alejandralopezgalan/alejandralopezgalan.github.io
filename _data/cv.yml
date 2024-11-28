@@ -6,7 +6,7 @@
     - name: Email
       value: lopez.galan.alejandra@gmail.com
     - name: Summary
-      value: Highly motivated and results-oriented PhD graduate with a strong foundation in data analysis, visualization, and research methodologies. Eager to leverage expertise in Python programming, statistical analysis, SQL, and data visualization tools to transition into a Data Analyst role. Skilled in data collection, cleaning, and manipulation, with a passion for uncovering insights from complex datasets.
+      value: Highly motivated and results-oriented PhD graduate with a strong foundation in data analysis, visualization, and research methodologies. Eager to leverage expertise in SQL, data visualization, Python programming, and statistical analysis to transition into a Data Analyst role. Skilled in data collection, cleaning, and manipulation, with a passion for uncovering insights from complex datasets.
     - name: Languages
       value: Spanish, and English
     - name: LinkedIn
@@ -23,7 +23,8 @@
       institution: Instituto Blaise Pascale. Mexico
       year: 05/2022 - Current
       description:
-        - Created comprehensive Excel training modules to teach students how to analyse geographical data aligned with curriculum standards
+        - Taught Geography, Ecology, and Critical Thinking to high school students. 
+        - Improved student performance by an average of 10% through engaging lectures and interactive discussions, fostering a positive learning environment that encouraged independent thought and problem-solving skills.
 
     - title: Research Assistant
       institution: Queensland Brain Institute. The University of Queensland. Australia
@@ -35,8 +36,8 @@
       institution: Universidad del Mar. Mexico
       year: 01/2014 - 02/2015
       description:
-        - Advised and trained over 50 students in safe laboratory operations.
-        - Managed research project finances and data analysis, saving the laboratory facilities over 100 hours through streamlined processes and efficient resource allocation
+        - Supported research projects by managing finances, conducting experiments, analysing ecological data (descriptive statistics, regressions, correlations, ANOVAs, cluster analysis), and maintaining laboratory equipment.
+        - Mentored and trained 25+ students in laboratory techniques.
 
 - title: Education
   type: time_table
