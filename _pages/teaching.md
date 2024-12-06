@@ -34,6 +34,7 @@ Here are some slides I use to illustrate these topics in class.
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFo533L8A8&#x2F;C5jinU65_FE_1xgNESS6UA&#x2F;view?utm_content=DAFo533L8A8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> Tema 1.1 Campo de estudio de la Geografía </a>
 
+&nbsp;
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -44,7 +45,7 @@ Here are some slides I use to illustrate these topics in class.
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFuMEz8x0M&#x2F;7Zp76uLDC-Sb52IwZv2ErQ&#x2F;view?utm_content=DAFuMEz8x0M&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Tema 2.1.3 Movimientos terrestres y sus consecuencias</a>
 
-
+---
 ### Critical Thinking
 This elective English subject focuses on developing critical thinking skills. We learn to identify, analyse, and evaluate arguments and claims, recognise and overcome personal biases, construct persuasive arguments, and make informed decisions. Additionally, we acquire essential digital literacy skills, such as locating reliable information online and identifying logical fallacies.
 
@@ -59,6 +60,7 @@ To foster a collaborative and engaging learning environment, we participate in t
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqUJpmwTw&#x2F;gZnjsnXAMHHUS3rN6A8vgw&#x2F;view?utm_content=DAFqUJpmwTw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Topic 1.1 Introduction to Critical Thinking</a>
 
+&nbsp;
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -83,6 +85,7 @@ In our ecology class, we explore the intricate relationships between living orga
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFW6bxkLOo&#x2F;Wmx5sIXVqJyVOyXIPigX3w&#x2F;view?utm_content=DAFW6bxkLOo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Tema 1.1.2. Educación ambiental</a>
 
+&nbsp;
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
