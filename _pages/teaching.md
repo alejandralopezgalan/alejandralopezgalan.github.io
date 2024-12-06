@@ -8,7 +8,7 @@ nav_order: 6
 ---
 
 ---
-## My experience as a Teacher
+## My experience as a teacher
 The classroom is my stage, and my students are the audience. Each day, I strive to weave a captivating narrative, where every lesson is a chapter in their personal growth story. The joy of witnessing their "aha" moments, the spark in their eyes when they finally grasp a concept, and the thrill of igniting their mind is an unparalleled reward.
 
 To accommodate diverse learning styles, I employ a variety of teaching methods, from storytelling to interactive presentations. My goal is to create engaging learning experiences for everyone.
@@ -34,6 +34,7 @@ Here are some slides I use to illustrate these topics in class.
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFo533L8A8&#x2F;C5jinU65_FE_1xgNESS6UA&#x2F;view?utm_content=DAFo533L8A8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> Tema 1.1 Campo de estudio de la Geografía </a>
 
+
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
@@ -43,14 +44,11 @@ Here are some slides I use to illustrate these topics in class.
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFuMEz8x0M&#x2F;7Zp76uLDC-Sb52IwZv2ErQ&#x2F;view?utm_content=DAFuMEz8x0M&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Tema 2.1.3 Movimientos terrestres y sus consecuencias</a>
 
----
 
 ### Critical Thinking
 This elective English subject focuses on developing critical thinking skills. We learn to identify, analyse, and evaluate arguments and claims, recognise and overcome personal biases, construct persuasive arguments, and make informed decisions. Additionally, we acquire essential digital literacy skills, such as locating reliable information online and identifying logical fallacies.
 
 To foster a collaborative and engaging learning environment, we participate in team-based trivia activities.
-
-
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -60,6 +58,7 @@ To foster a collaborative and engaging learning environment, we participate in t
   </iframe>
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqUJpmwTw&#x2F;gZnjsnXAMHHUS3rN6A8vgw&#x2F;view?utm_content=DAFqUJpmwTw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Topic 1.1 Introduction to Critical Thinking</a>
+
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -72,5 +71,24 @@ To foster a collaborative and engaging learning environment, we participate in t
 
 ---
 ### Ecology class
-Explain
+In our ecology class, we explore the intricate relationships between living organisms and their environment. We delve into concepts such as ecosystems, biodiversity, and energy flow, understanding how these elements interact to shape our planet. We investigate the impact of human activities on the environment, including climate change, pollution, and habitat destruction. Additionally, we study specific case studies, such as Mexico's "Áreas Naturales Protegidas," to understand the importance of conservation efforts and sustainable practices. To apply these concepts firsthand, we visit an organic farm, where we learn about sustainable agriculture practices and the importance of local food systems. We also gain practical skills in plant cultivation, enabling us to grow our own plants at home and contribute to a more sustainable lifesty
 
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAFW6bxkLOo/Wmx5sIXVqJyVOyXIPigX3w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFW6bxkLOo&#x2F;Wmx5sIXVqJyVOyXIPigX3w&#x2F;view?utm_content=DAFW6bxkLOo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Tema 1.1.2. Educación ambiental</a>
+
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAFiSq6kWxM/V3Z6ijaUK60LPgb1h7tJJQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFiSq6kWxM&#x2F;V3Z6ijaUK60LPgb1h7tJJQ&#x2F;view?utm_content=DAFiSq6kWxM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Tema 3.2 Legislación ambiental</a>
