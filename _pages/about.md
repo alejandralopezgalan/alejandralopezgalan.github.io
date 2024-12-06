@@ -25,3 +25,5 @@ I am currently actively learning and expanding my data analysis skillset through
 
 I am eager to explore potential opportunities in the field. Feel free to reach out via email to connect and discuss my career goals
 
+Feel free to explore my <a href='https://alejandralopezgalan.github.io/projects/'>Data Analyst Portfolio</a> to see the projects I have been working on.
+
