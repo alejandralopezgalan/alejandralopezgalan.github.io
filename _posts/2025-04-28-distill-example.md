@@ -9,26 +9,6 @@ future: true
 htmlwidgets: true
 hidden: false
 
-# Anonymize when submitting
-# authors:
-#   - name: Anonymous
-
-authors:
-  - name: Albert Einstein
-    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
-    affiliations:
-      name: IAS, Princeton
-  - name: Boris Podolsky
-    url: "https://en.wikipedia.org/wiki/Boris_Podolsky"
-    affiliations:
-      name: IAS, Princeton
-  - name: Nathan Rosen
-    url: "https://en.wikipedia.org/wiki/Nathan_Rosen"
-    affiliations:
-      name: IAS, Princeton
-
-# must be the exact same name as your blogpost
-bibliography: 2025-04-28-distill-example.bib  
 
 # Add a table of contents to your post.
 #   - make sure that TOC names match the actual section names
@@ -67,7 +47,7 @@ _styles: >
   }
 ---
 
-Note: please use the table of contents as defined in the front matter rather than the traditional markdown styling.
+
 
 ## Equations
 
@@ -99,7 +79,7 @@ To include images in your submission in this way, you must do something like the
 
 which results in the following image:
 
-{% include figure.html path="assets/img/2025-04-28-distill-example/iclr.png" class="img-fluid" %}
+<!---{% include figure.html path="assets/img/2025-04-28-distill-example/iclr.png" class="img-fluid" %} --->
 
 To ensure that there are no namespace conflicts, you must save your asset to your unique directory
 `/assets/img/2025-04-28-[SUBMISSION NAME]` within your submission.
@@ -109,10 +89,10 @@ Some more complex ways to load images (note the different styles of the shapes/s
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-distill-example/9.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/9.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-distill-example/7.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/7.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -121,22 +101,22 @@ Some more complex ways to load images (note the different styles of the shapes/s
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-distill-example/8.jpg" class="img-fluid z-depth-2" %}
+        {% include figure.html path="assets/img/8.jpg" class="img-fluid z-depth-2" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-distill-example/10.jpg" class="img-fluid z-depth-2" %}
+        {% include figure.html path="assets/img/10.jpg" class="img-fluid z-depth-2" %}
     </div>
 </div>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-distill-example/11.jpg" class="img-fluid"  %}
+        {% include figure.html path="assets/img/11.jpg" class="img-fluid"  %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-distill-example/12.jpg" class="img-fluid" %}
+        {% include figure.html path="assets/img/12.jpg" class="img-fluid" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-distill-example/7.jpg" class="img-fluid" %}
+        {% include figure.html path="assets/img/7.jpg" class="img-fluid" %}
     </div>
 </div>
 
@@ -180,7 +160,7 @@ And then include it with the following:
 Voila!
 
 <div class="l-page">
-  <iframe src="{{ 'assets/html/2025-04-28-distill-example/plotly_demo_1.html' | relative_url }}" frameborder='0' scrolling='no' height="600px" width="100%"></iframe>
+  <iframe src="{{ 'assets/html/plotly_demo_1.html' | relative_url }}" frameborder='0' scrolling='no' height="600px" width="100%"></iframe>
 </div>
 
 ## Citations
