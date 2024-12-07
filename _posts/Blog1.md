@@ -1,0 +1,27 @@
+---
+layout: post
+title: A teacher's journey to data analytics: My perspective
+date: 2024-12-07
+description: Follow my journey as I transition from the classroom to data analytics. I'll share insights, tips, and lessons learned as I work towards a new career as a data analyst.
+tags: data analytics career change marine biology
+categories: self-learning, career-change
+disqus_comments: true
+related_posts: true
+---
+
+Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. [Pinterest](https://www.pinterest.com) DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+
+#### Hipster list
+
+- brunch
+- fixie
+- raybans
+- messenger bag
+
+#### Check List
+
+- [x] Brush Teeth
+- [ ] Put on socks
+  - [x] Put on left sock
+  - [ ] Put on right sock
+- [x] Go to school
