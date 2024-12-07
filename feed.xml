@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://alejandralopezgalan.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://alejandralopezgalan.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-12-07T19:26:47+00:00</updated><id>https://alejandralopezgalan.github.io/feed.xml</id><title type="html">blank</title><subtitle>PhD in Neuroscience, now fascinated by data&apos;s power! Learning SQL, Python &amp; data visualisation tools to unlock insights as a Data Analyst. </subtitle><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://alejandralopezgalan.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://alejandralopezgalan.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://alejandralopezgalan.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.]]></summary></entry><entry><title type="html">a post with pseudo code</title><link href="https://alejandralopezgalan.github.io/blog/2024/pseudocode/" rel="alternate" type="text/html" title="a post with pseudo code"/><published>2024-04-15T00:01:00+00:00</published><updated>2024-04-15T00:01:00+00:00</updated><id>https://alejandralopezgalan.github.io/blog/2024/pseudocode</id><content type="html" xml:base="https://alejandralopezgalan.github.io/blog/2024/pseudocode/"><![CDATA[<p>This is an example post with some pseudo code rendered by <a href="https://github.com/SaswatPadhi/pseudocode.js">pseudocode</a>. The example presented here is the same as the one in the <a href="https://saswat.padhi.me/pseudocode.js/">pseudocode.js</a> documentation, with only one simple but important change: everytime you would use <code class="language-plaintext highlighter-rouge">$</code>, you should use <code class="language-plaintext highlighter-rouge">$$</code> instead. Also, note that the <code class="language-plaintext highlighter-rouge">pseudocode</code> key in the front matter is set to <code class="language-plaintext highlighter-rouge">true</code> to enable the rendering of pseudo code. As an example, using this code:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">pseudocode
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://alejandralopezgalan.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://alejandralopezgalan.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-12-07T19:26:56+00:00</updated><id>https://alejandralopezgalan.github.io/feed.xml</id><title type="html">blank</title><subtitle>PhD in Neuroscience, now fascinated by data&apos;s power! Learning SQL, Python &amp; data visualisation tools to unlock insights as a Data Analyst. </subtitle><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://alejandralopezgalan.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://alejandralopezgalan.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://alejandralopezgalan.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.]]></summary></entry><entry><title type="html">a post with pseudo code</title><link href="https://alejandralopezgalan.github.io/blog/2024/pseudocode/" rel="alternate" type="text/html" title="a post with pseudo code"/><published>2024-04-15T00:01:00+00:00</published><updated>2024-04-15T00:01:00+00:00</updated><id>https://alejandralopezgalan.github.io/blog/2024/pseudocode</id><content type="html" xml:base="https://alejandralopezgalan.github.io/blog/2024/pseudocode/"><![CDATA[<p>This is an example post with some pseudo code rendered by <a href="https://github.com/SaswatPadhi/pseudocode.js">pseudocode</a>. The example presented here is the same as the one in the <a href="https://saswat.padhi.me/pseudocode.js/">pseudocode.js</a> documentation, with only one simple but important change: everytime you would use <code class="language-plaintext highlighter-rouge">$</code>, you should use <code class="language-plaintext highlighter-rouge">$$</code> instead. Also, note that the <code class="language-plaintext highlighter-rouge">pseudocode</code> key in the front matter is set to <code class="language-plaintext highlighter-rouge">true</code> to enable the rendering of pseudo code. As an example, using this code:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">pseudocode
 </span><span class="sb">% This quicksort algorithm is extracted from Chapter 7, Introduction to Algorithms (3rd edition)
 \begin{algorithm}
 \caption{Quicksort}
@@ -50,86 +50,4 @@
 \ENDPROCEDURE
 \end{algorithmic}
 \end{algorithm}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included pseudo code could look like]]></summary></entry><entry><title type="html">a post with vega lite</title><link href="https://alejandralopezgalan.github.io/blog/2024/vega-lite/" rel="alternate" type="text/html" title="a post with vega lite"/><published>2024-01-27T00:20:00+00:00</published><updated>2024-01-27T00:20:00+00:00</updated><id>https://alejandralopezgalan.github.io/blog/2024/vega-lite</id><content type="html" xml:base="https://alejandralopezgalan.github.io/blog/2024/vega-lite/"><![CDATA[<p>This is an example post with some <a href="https://vega.github.io/vega-lite/">vega lite</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">vega_lite
-</span><span class="sb">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-vega_lite">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}
-</code></pre> <p>This plot supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included vega lite code could look like]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://alejandralopezgalan.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog"/><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://alejandralopezgalan.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://alejandralopezgalan.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry></feed>
+</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included pseudo code could look like]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://alejandralopezgalan.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog"/><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://alejandralopezgalan.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://alejandralopezgalan.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry></feed>
