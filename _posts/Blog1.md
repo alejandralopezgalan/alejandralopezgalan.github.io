@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A teacher's journey to data analytics: My perspective
+title: A teacher's journey to data analytics
 date: 2024-12-07
 description: Follow my journey as I transition from the classroom to data analytics. I'll share insights, tips, and lessons learned as I work towards a new career as a data analyst.
 tags: data analytics career change marine biology
