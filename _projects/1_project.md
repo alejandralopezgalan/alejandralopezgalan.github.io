@@ -2,14 +2,13 @@
 layout: page
 title: HR Metrics Monitoring and Attrition Analysis
 description: A guided project on HR analytics
-img: assets/img/hr-powerbi.png
+img: assets/img/project1-hr-powerbi.png
 importance: 1
 category: work
 related_publications: false
 ---
 
-![HR](https://github.com/user-attachments/assets/429b7a45-d183-40f9-8207-8caa972cafee)
-
+{% include figure.liquid loading="eager" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
 
@@ -84,18 +83,20 @@ I initiated a new Power BI report and imported the five CSV datasets. To clarify
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/DimDate.txt) file.
 
-![Renaming the columns](https://github.com/user-attachments/assets/02f48e75-bc60-4993-9c19-d1053a691830)
+
+{% include figure.liquid loading="eager" path="assets/img/project1-rename-columns.png" class="img-fluid rounded z-depth-1" %}
 
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
 
-![Initial model](https://github.com/user-attachments/assets/04fbeee3-acca-46d0-bb47-e3673feb7366)
+{% include figure.liquid loading="eager" path="assets/img/project1-initial-model.png" class="img-fluid rounded z-depth-1" %}
+
 
 
 <br/>This image shows the final data model used for the analysis.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/modelo-hr-powerbi.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project1-model-hr-powerbi.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -134,28 +135,28 @@ _Overview_ describes the high-level metrics about attrition at the company, incl
 <br/>This image shows the final data model used for the analysis.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/overview.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 <br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/demographics.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project1-demographics.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 <br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/performance.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project1-performance.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 <br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/attrition.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project1-attrition.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
