@@ -30,7 +30,7 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
     - [Data Transformation](#data-transformation)
     - [DAX measures](#dax-measures)
     - [Data Analysis](#data-analysis)
-    - [Data Visualization](#data-visualization)
+    - [Data Visualisation](#data-visualisation)
 - [Results and Implications](#results-and-implications)
 
 
@@ -51,7 +51,7 @@ To analyse HR metrics and employee performance to identify attrition drivers.
 - __Managerial Development:__ Provide training and support to managers to improve their leadership skills and create a positive work environment.
 - __Compensation and Benefits Review:__ Regularly review compensation and benefits packages to ensure they remain competitive.
 
-By implementing these recommendations, Atlas Labs can significantly reduce employee turnover, improve morale, and enhance overall organizational performance.
+By implementing these recommendations, Atlas Labs can significantly reduce employee turnover, improve morale, and enhance overall organisational performance.
 
 ---
 
@@ -118,21 +118,21 @@ I created a table with all the measures required for the analysis, and I used DA
 | `% Attrition Rate Date` | Calculates the rates of attrition base on inactive employees by date | `% Attrition Rate Date = DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])` |
 
 #### Data Analysis
-- Exploratory Data Analysis (EDA): I used descriptive statistics and data visualization to identify trends and patterns in the data.
-- Key Metrics: Employee satisfaction, turnover rates, diversity indexes, and hiring trends were analyzed.
+- Exploratory Data Analysis (EDA): I used descriptive statistics and data visualisation to identify trends and patterns in the data.
+- Key Metrics: Employee satisfaction, turnover rates, diversity indexes, and hiring trends were analysed.
 
 
-#### Data Visualization
+#### Data Visualisation
 I created a report in Power BI to showcase the results of the analysis. 
 
 _Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
 <br/>This image shows the final data model used for the analysis.
 {% include figure.liquid loading="eager" path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %}
 
-<br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
+<br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees.
 {% include figure.liquid loading="eager" path="assets/img/project1-demographics.png" class="img-fluid rounded z-depth-1" %}
 
-<br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
+<br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews.
 {% include figure.liquid loading="eager" path="assets/img/project1-performance.png" class="img-fluid rounded z-depth-1" %}
 
 <br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
