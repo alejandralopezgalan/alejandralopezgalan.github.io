@@ -162,5 +162,5 @@ _Overview_ describes the high-level metrics about attrition at the company, incl
 ---
 
 ### PowerBi File
-In case you want to review the analysis in detail, you can find the file [here](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/Report-HR-analytics-in-PowerBI.pbix)
+In case you want to review the analysis in detail, you can download the raw file [here](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/Report-HR-analytics-in-PowerBI.pbix)
 
