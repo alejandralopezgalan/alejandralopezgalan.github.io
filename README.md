@@ -29,8 +29,8 @@ Please view the original README on the [al-folio github repo](https://github.com
       - [Theming](#theming)
       - [Related posts](#related-posts)
       - [Code quality checks](#code-quality-checks)
-  - [FAQ](#faq)
-  - [License](#license)
+- [FAQ](#faq)
+- [License](#license)
 
 ## Getting started
 
