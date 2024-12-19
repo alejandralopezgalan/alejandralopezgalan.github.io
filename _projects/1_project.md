@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-{% include figure.liquid loading="eager" max-width="680px" max-heigth="1080px" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" max-width="480px" max-heigth="720px" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
 
@@ -83,11 +83,11 @@ I initiated a new Power BI report and imported the five CSV datasets. To clarify
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/DimDate.txt) file.
 
-{% include figure.liquid loading="eager" path="assets/img/project1-rename-columns.png" max-width="400px" max-heigth="740px" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/project1-rename-columns.png" max-width="260px" max-heigth="540px" class="img-fluid rounded z-depth-1" %}
 
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
-{% include figure.liquid loading="eager" path="assets/img/project1-initial-model.png" max-width="680px" max-heigth="1080px" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/project1-initial-model.png" class="img-fluid rounded z-depth-1" %}
 
 
 <br/>This image shows the final data model used for the analysis.
