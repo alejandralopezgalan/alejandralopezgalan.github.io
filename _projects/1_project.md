@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-{% include figure.liquid loading="eager" max-width="720px" max-heigth="1280px" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" max-width="680px" max-heigth="1080px" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
 
@@ -83,22 +83,16 @@ I initiated a new Power BI report and imported the five CSV datasets. To clarify
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/DimDate.txt) file.
 
-
-{% include figure.liquid loading="eager" path="assets/img/project1-rename-columns.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/project1-rename-columns.png" max-width="680px" max-heigth="1080px" class="img-fluid rounded z-depth-1" %}
 
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
-
-{% include figure.liquid loading="eager" path="assets/img/project1-initial-model.png" class="img-fluid rounded z-depth-1" %}
-
+{% include figure.liquid loading="eager" path="assets/img/project1-initial-model.png" max-width="680px" max-heigth="1080px" class="img-fluid rounded z-depth-1" %}
 
 
 <br/>This image shows the final data model used for the analysis.
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project1-model-hr-powerbi.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+{% include figure.liquid loading="eager" path="assets/img/project1-model-hr-powerbi.png" class="img-fluid rounded z-depth-1" %}
+
 
 ### DAX measures
 I created a table with all the measures required for the analysis, and I used DAX formulas to create these measures.
@@ -133,32 +127,16 @@ I created a report in Power BI to showcase the results of the analysis.
 
 _Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
 <br/>This image shows the final data model used for the analysis.
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+{% include figure.liquid loading="eager" path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %}
 
 <br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project1-demographics.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+{% include figure.liquid loading="eager" path="assets/img/project1-demographics.png" class="img-fluid rounded z-depth-1" %}
 
 <br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews, 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project1-performance.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+{% include figure.liquid loading="eager" path="assets/img/project1-performance.png" class="img-fluid rounded z-depth-1" %}
 
 <br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/project1-attrition.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+{% include figure.liquid loading="eager" path="assets/img/project1-attrition.png" class="img-fluid rounded z-depth-1" %}
 
 
 ---
