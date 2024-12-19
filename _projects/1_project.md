@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-{% include figure.liquid loading="eager" max-width="188px" max-heigth="307px" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" max-width="720px" max-heigth="1280px" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
 
