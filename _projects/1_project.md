@@ -159,4 +159,8 @@ _Overview_ describes the high-level metrics about attrition at the company, incl
 - High turnover rates can lead to increased costs, decreased productivity, and a negative impact on company culture.
 - Addressing the root causes of attrition is essential for improving retention and creating a positive work environment.
 
+---
+
+### PowerBi File
+In case you want to review the analysis in detail, you can find the file [here](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/Report-HR-analytics-in-PowerBI.pbix)
 
