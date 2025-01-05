@@ -126,7 +126,6 @@ I created a table with all the measures required for the analysis, and I used DA
 I created a report in Power BI to showcase the results of the analysis. 
 
 _Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
-<br/>This image shows the final data model used for the analysis.
 {% include figure.liquid loading="eager" path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %}
 
 <br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees.
