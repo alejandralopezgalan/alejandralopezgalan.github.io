@@ -87,8 +87,7 @@ I initiated a new Power BI report and imported the five CSV datasets. To clarify
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](DimDate.txt) file.
 
-![Renaming the columns](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-rename-columns.png)
-
+{% include figure.liquid path="assets/img/project1-rename-columns.png" class="img-fluid rounded z-depth-1" %} 
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
 
