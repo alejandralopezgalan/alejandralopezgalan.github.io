@@ -140,7 +140,7 @@ _Overview_ provides a high-level summary of key metrics related to attrition at 
 
 The interactive elements of the Overview page in my Power BI report allow users to explore various metrics and trends related to employee attrition, such as: viewing the total number of employees and their status (active/inactive), exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
 
-{% include figure.liquid path="assets/img/project1_overview_video.gif" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/video/project1_overview_video.gif" class="img-fluid rounded z-depth-1" %} 
 
 <br/> _Demographics_ page includes key statistics such as:
 - Age Distribution: Ranges from 18 to 51 years old, with the majority being 20-29 years old (874 employees).
@@ -148,25 +148,22 @@ The interactive elements of the Overview page in my Power BI report allow users 
 - Gender Distribution: The majority are females between 30 and 39 years old.
 - Ethnicity: The highest number of employees are white, with an average salary around $110K.
 
-{% include figure.liquid path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %} 
-
-  
-![demographics](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-demographics.png)
+{% include figure.liquid path="assets/img/project1-demographics.png" class="img-fluid rounded z-depth-1" %} 
 
 The interactive features of the Demographics dashboard enable users to delve into various demographic metrics and gain detailed insights into employee data.
 
-![demographics_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_demographics_video.gif)
+{% include figure.liquid path="assets/video/project1_demographics_video.gif" class="img-fluid rounded z-depth-1" %} 
 
 <br/> _Performance Tracker_ is a page designed to visualise individual employee performance scores based on yearly performance reviews. The dashboard includes various elements such as:
 - KPIs: Key Performance Indicators of individual scores on different criteria such as job satisfaction, environment satisfaction, relationships satisfaction, and work-life balance across multiple years.
 - Review Records: Individual records of the start date (when the employee started working at the company), the date of the last review, and the due date for the next review.
 - Comparison Charts: Visual comparisons of self-performance metrics and those by their management.
 
-![performance-tracker](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-performance.png)
+{% include figure.liquid path="assets/img/project1-performance.png" class="img-fluid rounded z-depth-1" %} 
 
 Users can select an individual employee to view their specific performance scores and review records in detail.
 
-![performance-gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_performance_video.gif)
+{% include figure.liquid path="assets/video/project1_performance_video.gif" class="img-fluid rounded z-depth-1" %} 
 
 <br/> _Attrition_ is a page that displays in-depth plots related to the company's attrition rate. The dashboard includes various elements such as:
 - Overall Attrition Rate: The overall percentage of employees leaving the company (16.1%).
@@ -176,11 +173,11 @@ Users can select an individual employee to view their specific performance score
 - Attrition by Hire Date: Analysis of attrition rates by employee hire dates. 2020 was the year with the highest rate (22.0%).
 - Tenure: Breakdown of attrition rates based on employees' length of tenure at the company. The majority are employees with less than two years of tenure.
 
-![attrition](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-attrition.png)
+{% include figure.liquid path="assets/img/project1-attrition.png" class="img-fluid rounded z-depth-1" %} 
 
 Users can interact with the dashboard to explore these metrics and gain detailed insights into employee turnover.
 
-![attrition_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_attrition_video.gif)
+{% include figure.liquid path="assets/video/project1_attrition_video.gif" class="img-fluid rounded z-depth-1" %} 
 
 ---
 
