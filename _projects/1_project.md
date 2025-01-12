@@ -87,16 +87,16 @@ I initiated a new Power BI report and imported the five CSV datasets. To clarify
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](DimDate.txt) file.
 
-{% include figure.liquid path="assets/img/project1-rename-columns.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid loading="eager" max-width="480px" max-heigth="720px" path="assets/img/project1-rename-columns.png" class="img-fluid rounded z-depth-1" %} 
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
 
-![Initial model](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-initial-model.png)
-
+{% include figure.liquid path="assets/img/project1-initial-model.png" class="img-fluid rounded z-depth-1" %} 
 
 <br/>This image shows the final data model used for the analysis.
 
-![The final model](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-model-hr-powerbi.png)
+{% include figure.liquid path="assets/img/project1-model-hr-powerbi.png" class="img-fluid rounded z-depth-1" %} 
+
 
 ### DAX measures
 I created a table with all the measures required for the analysis, and I used DAX formulas to create these measures.
@@ -135,19 +135,21 @@ _Overview_ provides a high-level summary of key metrics related to attrition at 
 - Employees by Department and Role: Distribution of active employees across different departments (Technology, Sales and HR) and roles.
 - Attrition Rate: The percentage of employees leaving the company over a specific period (actual 16.1%).
 - Hiring Trend by Year: The trend of employee hiring over the past years (2012 to 2022).
-  
-![overview](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-overview.png)
+
+{% include figure.liquid path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %} 
 
 The interactive elements of the Overview page in my Power BI report allow users to explore various metrics and trends related to employee attrition, such as: viewing the total number of employees and their status (active/inactive), exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
 
-![overview_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_overview_video.gif)
-
+{% include figure.liquid path="assets/img/project1_overview_video.gif" class="img-fluid rounded z-depth-1" %} 
 
 <br/> _Demographics_ page includes key statistics such as:
 - Age Distribution: Ranges from 18 to 51 years old, with the majority being 20-29 years old (874 employees).
 - Marital Status: The largest group is single (624 employees, 42.45% of the total).
 - Gender Distribution: The majority are females between 30 and 39 years old.
 - Ethnicity: The highest number of employees are white, with an average salary around $110K.
+
+{% include figure.liquid path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %} 
+
   
 ![demographics](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-demographics.png)
 
