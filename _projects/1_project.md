@@ -22,22 +22,26 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
- - [Methodology](#methodology)
-   - [Data Source](#data-source)
-    - [Tools and Techniques](#tools-and-techniques)
-    - [Data Understanding](#data-understanding)
-    - [Data Cleaning](#data-cleaning)
-    - [Data Transformation](#data-transformation)
-    - [DAX measures](#dax-measures)
-    - [Data Analysis](#data-analysis)
-    - [Data Visualisation](#data-visualisation)
+- [Methodology](#methodology)
+  - [Data Source](#data-source)
+  - [Tools and Techniques](#tools-and-techniques)
+  - [Data Understanding](#data-understanding)
+  - [Data Cleaning](#data-cleaning)
+  - [Data Transformation](#data-transformation)
+  - [DAX measures](#dax-measures)
+  - [Data Analysis](#data-analysis)
+  - [Data Visualisation](#data-visualisation)
 - [Results and Implications](#results-and-implications)
+  - [Demographics](#demographics)
+  - [Attrition](#attrition)
+  - [Performance](#performance)
+  - [Implications](#implications)
 
 
 ---
 ## Executive Summary
 ### Primary Goal
-To analyse HR metrics and employee performance to identify attrition drivers.
+To analyse Human Resources (HR) metrics and employee performance to identify attrition drivers.
 
 ### Key Findings
 - __Demographics:__ The majority of employees are between 20 and 29 years old, with a slightly higher proportion (2.7%) of women than men.
@@ -75,24 +79,25 @@ The analysis is based on HR data from Atlas Labs, covering demographics, tenure,
 Power BI, DAX functions, Data Modelling, and Exploratory Data Analysis (EDA).
 
 ### Data Understanding
-Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata page](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/metadata.md).
+Atlas Labs is a fictitious software company. To perform the analysis I used HR records that consisted of five tables:  `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details of each dataset review the [Metadata page](metadata.md).
 
 ### Data Cleaning
-I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/metadata.md). 
+I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. Next, I ensured that the columns were correctly formatted following the [Metadata information](metadata.md). 
 
 ### Data Transformation
-I created a new date calculated table using the DAX code from [DimDate.txt](https://github.com/alejandralopezgalan/HR-Analytics-PowerBI/blob/main/DimDate.txt) file.
+I created a new date calculated table using the DAX code from [DimDate.txt](DimDate.txt) file.
 
-{% include figure.liquid loading="eager" path="assets/img/project1-rename-columns.png" max-width="260px" max-heigth="540px" class="img-fluid rounded z-depth-1" %}
+![Renaming the columns](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-rename-columns.png)
 
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
-{% include figure.liquid loading="eager" path="assets/img/project1-initial-model.png" class="img-fluid rounded z-depth-1" %}
+
+![Initial model](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-initial-model.png)
 
 
 <br/>This image shows the final data model used for the analysis.
-{% include figure.liquid loading="eager" path="assets/img/project1-model-hr-powerbi.png" class="img-fluid rounded z-depth-1" %}
 
+![The final model](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-model-hr-powerbi.png)
 
 ### DAX measures
 I created a table with all the measures required for the analysis, and I used DAX formulas to create these measures.
@@ -117,44 +122,82 @@ I created a table with all the measures required for the analysis, and I used DA
 | `Inactive_Employees_Date` | Quantifies the number of inactive employees by date | `Inactive_Employees_Date = CALCULATE( [InactiveEmployees], USERELATIONSHIP ( DimDate[Date], DimEmployee[HireDate] ))` |
 | `% Attrition Rate Date` | Calculates the rates of attrition base on inactive employees by date | `% Attrition Rate Date = DIVIDE([Inactive_Employees_Date], [TotalEmployeesDate])` |
 
-#### Data Analysis
+### Data Analysis
 - Exploratory Data Analysis (EDA): I used descriptive statistics and data visualisation to identify trends and patterns in the data.
 - Key Metrics: Employee satisfaction, turnover rates, diversity indexes, and hiring trends were analysed.
 
 
-#### Data Visualisation
+### Data Visualisation
 I created a report in Power BI to showcase the results of the analysis. 
 
-_Overview_ describes the high-level metrics about attrition at the company, including total, active and inactive employees, active employees by department and role, attrition rate, and employee hiring trend by year.
-{% include figure.liquid loading="eager" path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %}
+_Overview_ provides a high-level summary of key metrics related to attrition at the company, including: 
+- Total Employees: The overall number of employees (1470).
+- Active and Inactive Employees: Breakdown of currently active (1233) and inactive employees (237).
+- Employees by Department and Role: Distribution of active employees across different departments (Technology, Sales and HR) and roles.
+- Attrition Rate: The percentage of employees leaving the company over a specific period (actual 16.1%).
+- Hiring Trend by Year: The trend of employee hiring over the past years (2012 to 2022).
+  
+![overview](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-overview.png)
 
-<br/> _Demographics_ include plots and metrics related to the demographics, diversity and inclusion of employees.
-{% include figure.liquid loading="eager" path="assets/img/project1-demographics.png" class="img-fluid rounded z-depth-1" %}
+The interactive elements of the Overview page in my Power BI report allow users to explore various metrics and trends related to employee attrition, such as: viewing the total number of employees and their status (active/inactive), exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
 
-<br/> _Performance tracker_ is a page to visualise individual employee's performance scores based on yearly performance reviews.
-{% include figure.liquid loading="eager" path="assets/img/project1-performance.png" class="img-fluid rounded z-depth-1" %}
+![overview_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_overview_video.gif)
 
-<br/> _Attrition_ displays more in-depth plots related to the attrition rate for the company.
-{% include figure.liquid loading="eager" path="assets/img/project1-attrition.png" class="img-fluid rounded z-depth-1" %}
 
+<br/> _Demographics_ page includes key statistics such as:
+- Age Distribution: Ranges from 18 to 51 years old, with the majority being 20-29 years old (874 employees).
+- Marital Status: The largest group is single (624 employees, 42.45% of the total).
+- Gender Distribution: The majority are females between 30 and 39 years old.
+- Ethnicity: The highest number of employees are white, with an average salary around $110K.
+  
+![demographics](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-demographics.png)
+
+The interactive features of the Demographics dashboard enable users to delve into various demographic metrics and gain detailed insights into employee data.
+
+![demographics_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_demographics_video.gif)
+
+<br/> _Performance Tracker_ is a page designed to visualise individual employee performance scores based on yearly performance reviews. The dashboard includes various elements such as:
+- KPIs: Key Performance Indicators of individual scores on different criteria such as job satisfaction, environment satisfaction, relationships satisfaction, and work-life balance across multiple years.
+- Review Records: Individual records of the start date (when the employee started working at the company), the date of the last review, and the due date for the next review.
+- Comparison Charts: Visual comparisons of self-performance metrics and those by their management.
+
+![performance-tracker](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-performance.png)
+
+Users can select an individual employee to view their specific performance scores and review records in detail.
+
+![performance-gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_performance_video.gif)
+
+<br/> _Attrition_ is a page that displays in-depth plots related to the company's attrition rate. The dashboard includes various elements such as:
+- Overall Attrition Rate: The overall percentage of employees leaving the company (16.1%).
+- Department and Job Role: Attrition rates segmented by different departments and job roles. The highest is Sales Representatives with 39.8%.
+- Travel Frequency: Attrition rates based on employees' travel frequency. The highest are frequent travellers with 24.9%.
+- Overtime Requirement: Attrition rates correlated with overtime work requirements. The highest (30.5%) for those with overtime requirements.
+- Attrition by Hire Date: Analysis of attrition rates by employee hire dates. 2020 was the year with the highest rate (22.0%).
+- Tenure: Breakdown of attrition rates based on employees' length of tenure at the company. The majority are employees with less than two years of tenure.
+
+![attrition](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/project1-attrition.png)
+
+Users can interact with the dashboard to explore these metrics and gain detailed insights into employee turnover.
+
+![attrition_gif](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/video/project1_attrition_video.gif)
 
 ---
 
-### Results and Implications
-#### Demographics
+## Results and Implications
+### Demographics
 - The workforce is relatively young, with a majority of employees aged 20-29.
 - While there is a gender imbalance, the company has a diverse workforce in terms of ethnicity.
 - Employees who identify as white have the highest average salary, whereas mixed or multiple ethnic groups have one of the lowest average salaries
 
-#### Attrition:
+### Attrition:
 - The overall attrition rate of 16.1% is higher than industry benchmarks ([Onsight Global](https://insightglobal.com/blog/employee-attrition-rate-how-to-calculate-improve/)).
 - Sales and Sales Representative roles have significantly higher turnover rates, indicating potential issues with job satisfaction, work-life balance, or management.
 - Frequent travelers and overtime workers are most likely to resign, as they have the highest attrition rate.
 
-#### Performance:
+### Performance:
 - A discrepancy between managerial ratings and self-performance ratings suggests potential misalignment in expectations or performance evaluation processes.
 
-#### Implications:
+### Implications:
 - High turnover rates can lead to increased costs, decreased productivity, and a negative impact on company culture.
 - Addressing the root causes of attrition is essential for improving retention and creating a positive work environment.
 
