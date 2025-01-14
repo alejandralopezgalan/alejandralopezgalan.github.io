@@ -203,4 +203,4 @@ Users can interact with the dashboard to explore these metrics and gain detailed
 ---
 
 ## Power Bi File
-If you want to review the detailed analysis, you can download the Power BI file from [here](assets/reports/project1-Report-HR-analytics-PowerBI.pbix).
+If you want to review the detailed analysis, you can download the Power BI file from [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/reports/project1-Report-HR-analytics-PowerBI.pbix).
