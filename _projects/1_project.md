@@ -2,13 +2,13 @@
 layout: page
 title: HR Metrics Monitoring and Attrition Analysis
 description: A guided project on HR analytics
-img: assets/img/project1/project1-hr-powerbi.png
+img: assets/img/project1-hr-powerbi.png
 importance: 1
 category: work
 related_publications: false
 ---
 
-{% include figure.liquid loading="eager" max-width="480px" max-heigth="720px" path="assets/img/project1/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" max-width="480px" max-heigth="720px" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
 
@@ -88,15 +88,15 @@ I initiated a new Power BI report and imported the five CSV datasets. To clarify
 ### Data Transformation
 I created a new date calculated table using the DAX code from [DimDate.txt](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project1-metadata.md) file.
 
-{% include figure.liquid loading="eager" max-width="280px" max-heigth="420px" path="assets/img/project1/project1-rename-columns.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid loading="eager" max-width="280px" max-heigth="420px" path="assets/img/project1-rename-columns.png" class="img-fluid rounded z-depth-1" %} 
 
 <br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
 
-{% include figure.liquid path="assets/img/project1/project1-initial-model.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/img/project1-initial-model.png" class="img-fluid rounded z-depth-1" %} 
 
 <br/>This image shows the final data model used for the analysis.
 
-{% include figure.liquid path="assets/img/project1/project1-model-hr-powerbi.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/img/project1-model-hr-powerbi.png" class="img-fluid rounded z-depth-1" %} 
 
 
 ### DAX measures
@@ -137,7 +137,7 @@ _Overview_ provides a high-level summary of key metrics related to attrition at 
 - Attrition Rate: The percentage of employees leaving the company over a specific period (actual 16.1%).
 - Hiring Trend by Year: The trend of employee hiring over the past years (2012 to 2022).
 
-{% include figure.liquid path="assets/img/project1/project1-overview.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %} 
 
 The interactive elements of the Overview page in my Power BI report allow users to explore various metrics and trends related to employee attrition, such as: viewing the total number of employees and their status (active/inactive), exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
 
@@ -149,7 +149,7 @@ The interactive elements of the Overview page in my Power BI report allow users 
 - Gender Distribution: The majority are females between 30 and 39 years old.
 - Ethnicity: The highest number of employees are white, with an average salary around $110K.
 
-{% include figure.liquid path="assets/img/project1/project1-demographics.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/img/project1-demographics.png" class="img-fluid rounded z-depth-1" %} 
 
 The interactive features of the Demographics dashboard enable users to delve into various demographic metrics and gain detailed insights into employee data.
 
@@ -160,7 +160,7 @@ The interactive features of the Demographics dashboard enable users to delve int
 - Review Records: Individual records of the start date (when the employee started working at the company), the date of the last review, and the due date for the next review.
 - Comparison Charts: Visual comparisons of self-performance metrics and those by their management.
 
-{% include figure.liquid path="assets/img/project1/project1-performance.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/img/project1-performance.png" class="img-fluid rounded z-depth-1" %} 
 
 Users can select an individual employee to view their specific performance scores and review records in detail.
 
@@ -174,7 +174,7 @@ Users can select an individual employee to view their specific performance score
 - Attrition by Hire Date: Analysis of attrition rates by employee hire dates. 2020 was the year with the highest rate (22.0%).
 - Tenure: Breakdown of attrition rates based on employees' length of tenure at the company. The majority are employees with less than two years of tenure.
 
-{% include figure.liquid path="assets/img/project1/project1-attrition.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/img/project1-attrition.png" class="img-fluid rounded z-depth-1" %} 
 
 Users can interact with the dashboard to explore these metrics and gain detailed insights into employee turnover.
 
