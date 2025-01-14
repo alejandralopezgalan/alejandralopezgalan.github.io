@@ -2,7 +2,7 @@
 layout: page
 title: HR Metrics Monitoring and Attrition Analysis
 description: A guided project on HR analytics
-img: assets/img/project1-hr-powerbi.png
+img: assets/img/project1/project1-hr-powerbi.png
 importance: 1
 category: work
 related_publications: false
