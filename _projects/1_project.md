@@ -11,7 +11,6 @@ related_publications: false
 {% include figure.liquid loading="eager" max-width="480px" max-heigth="720px" path="assets/img/project1-HRportada.png" class="img-fluid rounded z-depth-1" %}
 Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=query&last_value=HR&query=HR)
 
-
 ---
 ## Table Of Contents
 
