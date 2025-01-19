@@ -138,7 +138,10 @@ _Overview_ provides a high-level summary of key metrics related to attrition at 
 
 {% include figure.liquid path="assets/img/project1-overview.png" class="img-fluid rounded z-depth-1" %} 
 
-The interactive elements of the Overview page in my Power BI report allow users to explore various metrics and trends related to employee attrition, such as: viewing the total number of employees and their status (active/inactive), exploring the distribution of employees by department and role, and analysing the attrition rate and observing hiring trends over the years.
+The interactive elements of the Overview page in my Power BI report enable users to explore various metrics and trends related to employee attrition. These include:
+- Viewing the total number of employees and their status (active/inactive).
+- Exploring the distribution of employees by department and role.
+- Analysing the attrition rate and observing hiring trends over the years.
 
 {% include figure.liquid path="assets/video/project1_overview_video.gif" class="img-fluid rounded z-depth-1" %} 
 
