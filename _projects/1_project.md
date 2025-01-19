@@ -26,7 +26,7 @@ Image from [Freepik](https://www.freepik.com/search?format=search&last_filter=qu
   - [Tools and Techniques](#tools-and-techniques)
   - [Data Understanding](#data-understanding)
   - [Data Cleaning](#data-cleaning)
-  - [Data Transformation](#data-transformation)
+  - [Data Transformation and Modelling](#data-transformation-and-modelling)
   - [DAX measures](#dax-measures)
   - [Data Analysis](#data-analysis)
   - [Data Visualisation](#data-visualisation)
@@ -83,22 +83,22 @@ tlas Labs is a fictitious software company. To perform the analysis, I used HR r
 ### Data Cleaning
 I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. I then ensured that the columns were correctly formatted according to the [Metadata](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project1-metadata.md) information. 
 
-### Data Transformation
+### Data Transformation and Modelling
 I created a new calculated date table using the DAX code from the [DimDate.txt](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project1-DimDate.txt) file.
 
 {% include figure.liquid loading="eager" max-width="280px" max-heigth="420px" path="assets/img/project1-rename-columns.png" class="img-fluid rounded z-depth-1" %} 
 
-<br/>Once the data was loaded and cleaned, I generated a data model to establish the relatioships between tables. This image shows the initial data model.
+<br/>After loading and cleaning the data, I created a data model to establish the relationships between the tables. The image below illustrates the initial data model.
 
 {% include figure.liquid path="assets/img/project1-initial-model.png" class="img-fluid rounded z-depth-1" %} 
 
-<br/>This image shows the final data model used for the analysis.
+<br/>Final data model: The image below illustrates the final data model used for the analysis.
 
 {% include figure.liquid path="assets/img/project1-model-hr-powerbi.png" class="img-fluid rounded z-depth-1" %} 
 
 
 ### DAX measures
-I created a table with all the measures required for the analysis, and I used DAX formulas to create these measures.
+Measures Table: I created a table containing all the necessary measures for the analysis, utilising DAX formulas to generate these measures.
 
 | Measure | Description | DAX code |
 | :--- | --- | :--- |
