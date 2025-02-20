@@ -265,7 +265,7 @@ LIMIT 10;
 ### Analysis in Power BI
 I loaded the CSV file [mx_youtubers_data2024](assets/data/project2_mx_youtubers_data2024.csv) into a Power BI report, and the following image showed that the variables were correctly loaded.
 
-{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" max-width="450px" max-height="400px" %} 
+{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" max-width="300px" max-height="200px" %} 
 
 #### DAX measures
 I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
@@ -360,7 +360,7 @@ The interactive features of this dashboard:
 ### Data Analysis for the Marketing Campaign
 Based on the information and the data analysis I have done so far, it is possible to continue with the marketing analysis for the campaign. First, I focused on the following questions:
 
-1. Who are the top 10 YouTubers with the most subscribers?
+- Who are the top 10 YouTubers with the most subscribers?
 
 | Rank | Channel                                            | Subscribers (M) |
 | :--- |:-------------------------------------------------- | --------------: |
@@ -375,8 +375,9 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 9    | Susy Mouriz                                        | 27.30           |
 | 10   | BabyBus - Canciones Infantiles & Videos para Niños | 26.80           |
 
+<br/>
 
-2. Which 3 channels have uploaded the most videos?
+- Which 3 channels have uploaded the most videos?
 
 | Rank | Channel       | Videos Uploaded |
 | :--- |:------------- | --------------: |
@@ -384,8 +385,9 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 2    | Badabun       | 24080           |
 | 3    | Tu COSMOPOLIS | 11926           |
 
+<br/>
 
-3. Which 3 channels have the most views?
+- Which 3 channels have the most views?
 
 | Rank | Channel        | Total Views (B) |
 | :--- |:-------------- | --------------: |
@@ -393,8 +395,9 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 2    | Masha y el Oso | 20.26           |
 | 3    | Badabun        | 19.91           |
 
+<br/>
 
-4. Which 3 channels have the highest average views per video?
+- Which 3 channels have the highest average views per video?
 
 | Rank | Channel               | Average Views per Video (M) |
 | :--- |:--------------------- | --------------------------: |
@@ -402,8 +405,9 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 2    | Los Ángeles Azules    | 116.24                      |
 | 3    | vicentefernandez&reg; | 87.58                       |
 
+<br/>
 
-5. Which 3 channels have the highest views per subscriber ratio?
+- Which 3 channels have the highest views per subscriber ratio?
 
 | Rank | Channel               | Views per Subscriber |
 | :--- |:--------------------- | -------------------: |
@@ -411,8 +415,9 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 2    | Lizos Music           | 1,433.94             |
 | 3    | vicentefernandez&reg; | 1,316.36             |
 
+<br/>
    
-6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+- Which 3 channels have the highest subscriber engagement rate per video uploaded?
 
 | Rank | Channel            | Subscriber Engagement Rate |
 | :--- |:------------------ | -------------------------: |
@@ -420,6 +425,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 2    | Christian Nodal    | 610,526.32                 |
 | 3    | MrBeast en Español | 394,029.85                 |
 
+<br/>
 
 For this analysis, it is best to prioritise the metrics that are crucial in generating the expected ROI for our marketing team. These metrics are:
 - Top 3 YouTube channels with the most subscribers
@@ -442,6 +448,8 @@ I calculated the `Potential Product Sales per Video` by multiplying the `Average
 | 1 | Fede Vigevani | 62,300,000 | 12,710,000 | 254,200 | 1,271,000 | 1,221,000 |
 | 2 | YOLO AVENTURAS | 58,500,000 | 7,600,000 | 152,000 | 760,000 | 710,000    |
 | 3 | Badabun | 47,600,000 | 830,000 | 16,600 | 83,000 | 33,000 |
+
+<br/>
 
 **SQL code**
 ```sql  
@@ -518,6 +526,7 @@ Using a similar approach, I calculated the variables for the YouTube channels wi
 | 2 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 705,000 |
 | 3 | Badabun | 19,911,915,821 | 830,000 | 16,600 | 83,000 | 28,000 |
 
+<br/>
 
 #### YouTubers with the most videos uploaded
 Finally, the results for the YouTube channels with the most videos uploaded were:
@@ -532,6 +541,8 @@ Finally, the results for the YouTube channels with the most videos uploaded were
 | 1 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | -47,000 |
 | 2 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -86,000 |
 | 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -98,000 |
+
+<br/>
 
 ---
 ## Insights
