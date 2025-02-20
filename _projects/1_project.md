@@ -78,7 +78,7 @@ The analysis is based on HR data from Atlas Labs, covering demographics, tenure,
 Power BI, DAX functions, Data Modelling, and Exploratory Data Analysis (EDA).
 
 ### Data Understanding
-tlas Labs is a fictitious software company. To perform the analysis, I used HR records that consisted of five tables: `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details on each dataset, please review the [Metadata](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project1-metadata.md) page.
+Atlas Labs is a fictitious software company. To perform the analysis, I used HR records that consisted of five tables: `EducationLevel`, `Employee`, `RatingLevel`, `SatisfiedLevel`, and `PerformanceRating`. For more details on each dataset, please review the [Metadata](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project1-metadata.md) page.
 
 ### Data Cleaning
 I initiated a new Power BI report and imported the five CSV datasets. To clarify the table roles, I prepended 'Fact' or 'Dim' to each table name, designating them as either fact or dimension tables. I then ensured that the columns were correctly formatted according to the [Metadata](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project1-metadata.md) information. 
