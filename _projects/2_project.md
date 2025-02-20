@@ -264,7 +264,7 @@ LIMIT 10;
 ### Analysis in Power BI
 I loaded the CSV file [mx_youtubers_data2024](assets/data/project2_mx_youtubers_data2024.csv) into a Power BI report, and the following image showed that the variables were correctly loaded.
 
-{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" max-width="550px" max-height="500px" %} 
 
 #### DAX measures
 I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
