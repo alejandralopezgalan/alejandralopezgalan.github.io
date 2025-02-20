@@ -264,7 +264,7 @@ LIMIT 10;
 ### Analysis in Power BI
 I loaded the CSV file [mx_youtubers_data2024](assets/data/project2_mx_youtubers_data2024.csv) into a Power BI report, and the following image showed that the variables were correctly loaded.
 
-{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" max-width="550px" max-height="500px" %} 
+{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" max-width="450px" max-height="400px" %} 
 
 #### DAX measures
 I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
@@ -339,4 +339,45 @@ ViewsPerSubscriber =
   RETURN viewspersubscriber
 ```
 
+#### Data Visualisation
+
+The dashboard consist of: 
+1. Table of the Top 100 YouTubers: This table presents the most popular YouTube influencers, showcasing data on their total number of subscribers (in millions), the aggregate number of videos, and the overall views (in billions).
+2. Treemap of the Top 10 YouTubers: This treemap illustrates the top 10 YouTubers by their total views (in billions). Each segment delineates a YouTuber, accompanied by data on their total number of videos and subscribers (in millions).
+3. Channel Engagement Ratios: Three cards present essential engagement metrics.
+   - Average Views per Video: The mean number of views each video generates.
+   - Subscriber Engagement Rate: A metric quantifying the extent of subscribers' engagement with the content.
+   - Views per Subscriber: The average number of views generated per subscriber.
+4. Bar Chart of the Top 10 YouTubers: This bar chart ranks the top 10 YouTubers based on their total number of subscribers (in millions), providing a visual representation of their popularity.
+
+{% include figure.liquid path="assets/img/project2_dashboard.png" class="img-fluid rounded z-depth-1" %} 
+
+The interactive features of this dashboard:
+1. Table Interactivity: The table facilitates sorting and filtering of the top 100 YouTubers by subscribers, videos, or views. Selecting a YouTuber's name could present detailed insights into their channel's performance.
+2. Treemap Interactivity: Hovering over each segment of the treemap unveils additional information regarding the YouTuber's total videos and subscribers. Selecting a segment could navigate to a more detailed analysis of that YouTuber's channel analytics.
+3. Engagement Cards Interactivity: The cards dynamically update as different YouTubers are selected from the table or treemap, enabling the comparison of engagement metrics across channels.
+4. Bar Chart Interactivity: The bar chart permits highlighting and comparison of the top 10 YouTubers by total subscribers. Hovering over each bar displays a tooltip with more comprehensive subscriber information.
+
+{% include figure.liquid path="assets/img/project2_video_dashboard.gif" class="img-fluid rounded z-depth-1" %} 
+
+
+### Data Analysis for the Marketing Campaign
+Based on the information and the data analysis I have done so far, it is possible to continue with the marketing analysis for the campaign. First, I focused on the following questions:
+
+1. Who are the top 10 YouTubers with the most subscribers?
+
+| Rank | Channel                                            | Subscribers (M) |
+| :--- |:-------------------------------------------------- | --------------: |
+| 1    | Fede Vigevani                                      | 62.30           |
+| 2    | YOLO AVENTURAS                                     | 58.50           |
+| 3    | Badabun                                            | 47.60           |
+| 4    | Kimberly Loaiza                                    | 46.30           |
+| 5    | Juan De Dios Pantoja                               | 44.00           |
+| 6    | Masha y el Oso                                     | 39.60           |
+| 7    | GENIAL                                             | 32.00           |
+| 8    | YOLO                                               | 31.90           |
+| 9    | Susy Mouriz                                        | 27.30           |
+| 10   | BabyBus - Canciones Infantiles & Videos para Niños | 26.80           |
+
+<br />
 
