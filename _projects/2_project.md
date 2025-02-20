@@ -6,6 +6,7 @@ img: assets/img/project2_top-youtubers.png
 importance: 1
 category: work
 related_publications: false
+pretty_table: true
 ---
 
 
@@ -16,7 +17,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 >
 > This project was inspired and guided by the work of Stephen David William on [GitHub](https://github.com/sdw-online), whose data portfolio project provided invaluable insights and direction. I deeply appreciate the effort and dedication Stephen put into creating such a comprehensive resource.
 >
-> Original Project Title: Excel to Power BI Portfolio Project | Full End-to-End Data Project | top_uk_youtubers_2024. Author: Stephen David William. Platform: [YouTube](https://www.youtube.com/watch?v=mm_sN-Elplg&t=510s&ab_channel=Stephen%7CData)
+> Original Project Title: Excel to Power BI Portfolio Project. Full End-to-End Data Project. Top_uk_youtubers_2024. Author: Stephen David William. Platform: [YouTube](https://www.youtube.com/watch?v=mm_sN-Elplg&t=510s&ab_channel=Stephen%7CData)
 >
 > I have used this project as a foundation to expand my skills and knowledge in data analytics. All credit for the original concept and methodology goes to[Stephen David William](https://www.linkedin.com/in/stephen-david-williams-860428123/).
 <br/>
@@ -57,7 +58,6 @@ Identify the top YouTubers from Mexico in 2024 to determine which influencers ar
 ### Solution
 Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, showcasing their subscriber count, total views, total videos, and engagement metrics. This tool will support the marketing team in making informed decisions about which YouTubers to collaborate with for their campaigns.
 
-
 ### Key Findings
 - Fede Vigevani, YOLO AVENTURAS, and Badabun have the highest number of subscribers, attracting a large audience with their engaging content.
 - Badabun leads in the volume of videos uploaded, followed by Tlnovelas and Tu COSMOPOLIS, demonstrating their commitment to consistently providing fresh content.
@@ -93,17 +93,17 @@ The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/bhavyadhing
 
 This dataset provides structured information about the top 100 YouTubers from Mexico in 2024. Each entry represents a YouTuber and includes the following attributes:
 
-| Column name | Description | 
-| :--- | :--- |
-| `#` | The ranking of the YouTuber in the top 100 list |
-| `NAME` | The name or pseudonym of the YouTuber |
-| `FOLLOWERS` | The total number of subscribers the influencer has on YouTube |
-| `ER` | Engagement Rate: The level of interaction that the influencer's content receives from users on social media platforms, expressed as a percentage |
-| `COUNTRY` | The geographical location or country where the YouTuber is based or primarily operates |
-| `TOPIC OF INFLUENCE` | The niche or category in which the YouTuber specialises or creates content, such as fashion, beauty, technology, fitness, etc. |
-| `POTENTIAL REACH` | The estimated number of people who could see a YouTube video or campaign from this influencer |
-<br/>
-### Tools
+| Column name          | Description                                                                                                                                      | 
+| :------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `#`                  | The ranking of the YouTuber in the top 100 list                                                                                                  |
+| `NAME`               | The name or pseudonym of the YouTuber                                                                                                            |
+| `FOLLOWERS`          | The total number of subscribers the influencer has on YouTube                                                                                    |
+| `ER`                 | Engagement Rate: The level of interaction that the influencer's content receives from users on social media platforms, expressed as a percentage |
+| `COUNTRY`            | The geographical location or country where the YouTuber is based or primarily operates                                                           |
+| `TOPIC OF INFLUENCE` | The niche or category in which the YouTuber specialises or creates content, such as fashion, beauty, technology, fitness, etc.                   |
+| `POTENTIAL REACH` | The estimated number of people who could see a YouTube video or campaign from this influencer                                                       |
+
+<br/> ### Tools
 - Excel: To explore the data.
 - PostgreSQL: To clean, test, and analyse the data.
 - Power BI: To visualise the data via interactive dashboards.
@@ -114,7 +114,6 @@ Displayed below is a screenshot of a portion of the data presented in Excel.
 
 {% include figure.liquid path="assets/img/project2_kaggle_data_original.png" class="img-fluid rounded z-depth-1" %} 
 
-Review or improve this texto in British English:
 The objective is to refine our dataset, ensuring it is well-structured and primed for analysis.
 
 Criteria for the cleaned data:
@@ -123,4 +122,12 @@ Criteria for the cleaned data:
 - Verify that no column contains null values, guaranteeing the completeness of all records.
 
 After the initial data exploration, I realised that some columns, such as `ER`, `COUNTRY`, and `TOPIC OF INFLUENCE`, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, I needed to extract this information from YouTube to complement our dataset. I used a Python script to extract this information from YouTube.
+
+### Extracting data from YouTube
+I implemented a Python script based on the script developed by Stephen David William, available on [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/scripts/project2_script_youtube_python.py). 
+
+After running the script, the dataset included four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos` as seen in the following image. However, the script did not extract data from two YouTubers, possibly due to unrecognised channel IDs.
+
+{% include figure.liquid path="assets/img/project2_data_updated.png" class="img-fluid rounded z-depth-1" %} 
+
 
