@@ -22,7 +22,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 > I have used this project as a foundation to expand my skills and knowledge in data analytics. All credit for the original concept and methodology goes to [Stephen David William](https://www.linkedin.com/in/stephen-david-williams-860428123/).
 <br/>
 
-
+---
 ## Table Of Contents
 - [Executive Summary](#executive-summary)
   - [Primary Goal](#primary-goal)
@@ -48,7 +48,8 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 - [Insights](#insights)
     - [Collaboration Recommendations](#collaboration-recommendations)
     - [Potential Return on Investment](#potential-return-on-investment)
-- [Action Plan](#action-plan)	 
+- [Action Plan](#action-plan)
+- [Power BI Report](#power-bi-report)
 
 ---
 ## Executive Summary
@@ -381,3 +382,187 @@ Based on the information and the data analysis I have done so far, it is possibl
 
 <br />
 
+2. Which 3 channels have uploaded the most videos?
+
+| Rank | Channel       | Videos Uploaded |
+| :--- |:------------- | --------------: |
+| 1    | Tlnovelas     | 59898           |
+| 2    | Badabun       | 24080           |
+| 3    | Tu COSMOPOLIS | 11926           |
+<br />
+
+3. Which 3 channels have the most views?
+
+| Rank | Channel        | Total Views (B) |
+| :--- |:-------------- | --------------: |
+| 1    | YOLO AVENTURAS | 20.52           |
+| 2    | Masha y el Oso | 20.26           |
+| 3    | Badabun        | 19.91           |
+<br />
+
+4. Which 3 channels have the highest average views per video?
+
+| Rank | Channel               | Average Views per Video (M) |
+| :--- |:--------------------- | --------------------------: |
+| 1    | Christian Nodal       | 564.02                      |
+| 2    | Los Ángeles Azules    | 116.24                      |
+| 3    | vicentefernandez&reg; | 87.58                       |
+<br />
+
+5. Which 3 channels have the highest views per subscriber ratio?
+
+| Rank | Channel               | Views per Subscriber |
+| :--- |:--------------------- | -------------------: |
+| 1    | Los Ángeles Azules    | 1,490.62             |
+| 2    | Lizos Music           | 1,433.94             |
+| 3    | vicentefernandez&reg; | 1,316.36             |
+<br />
+   
+6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+
+| Rank | Channel            | Subscriber Engagement Rate |
+| :--- |:------------------ | -------------------------: |
+| 1    | Kenia Os           | 1,203,333.33               |
+| 2    | Christian Nodal    | 610,526.32                 |
+| 3    | MrBeast en Español | 394,029.85                 |
+
+For this analysis, it is best to prioritise the metrics that are crucial in generating the expected ROI for our marketing team. These metrics are:
+- Top 3 YouTube channels with the most subscribers
+- Top 3 YouTube channels with the most total views
+- Top 3 YouTube channels with the most videos uploaded
+
+In the advertisement analysis, the marketing team set a Conversion Rate of 2%, which indicates the proportion of viewers who act after watching the ad on a YouTube video. They also defined a product cost of $5.00 and allocated a campaign budget of $50,000 to compensate the YouTuber.
+
+
+#### YouTubers with the most subscribers
+I calculated the `Potential Product Sales per Video` by multiplying the `Average Views per Video` by the `Conversion Rate`. Then, I multiplied the `Potential Product Sales per Video` by the `Product Cost` to calculate the `Potential Revenue per Video`. Finally the `Net Profit`was the difference between the `Potential Revenue per Video` and the `Campaign Cost`. 
+
+**Campaign idea: product placement**
+- `Conversion Rate` = 2.00%
+- `Product Cost` = $5.00
+- `Product Placement Campaign Cost` = $50,000
+
+| Rank | Channel | Total Subscribers | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:------- | --------: | -------:| --------:| -----------:| ----------:| 
+| 1 | Fede Vigevani | 62,300,000 | 12,710,000 | 254,200 | 1,271,000 | 1,221,000 |
+| 2 | YOLO AVENTURAS | 58,500,000 | 7,600,000 | 152,000 | 760,000 | 710,000    |
+| 3 | Badabun | 47,600,000 | 830,000 | 16,600 | 83,000 | 33,000 |
+
+**SQL code**
+```sql  
+-- Advertisement campaign analysis
+-- YouTube Channels with the most subscribers
+-- Campaign idea: product placement
+-- Declare the variables using a temporary table
+DROP TABLE IF EXISTS variables;
+
+CREATE TABLE variables (
+    varname text,
+    varvalue float
+);
+
+-- Adding the values into the temporary table
+INSERT INTO variables (varname, varvalue) VALUES 
+    ('conversionRate', 0.02),  -- The conversion rate @ 2%
+    ('productCost', 5.0),      -- The product cost @ $5
+    ('ProductPlacementCost', 50000.0), -- The cost for a product placemente campaign is $50,000
+	('SponsoredVideosCost', 55000.0), -- The cost for a sponsored videos campaign is $55,000
+	('InfluencerContractCost', 55000.0); -- The cost for a sponsored videos campaign is $55,000
+
+
+-- Check if the values and variables are correct
+SELECT *
+FROM variables;
+	
+
+-- Define the CTE (Common Table Expression) to calculate the rounded average views per video
+WITH ChannelData AS (
+    SELECT 
+        total_subscribers,
+		channel_name,
+        total_views,
+        total_videos,
+        ROUND((total_views::NUMERIC / total_videos), -4) AS avg_views_video
+    FROM 
+        mexicans_youtubers
+)
+
+-- Select and calculate the required fields
+SELECT 
+    channel_name,
+    total_subscribers,
+	avg_views_video,
+	(avg_views_video * 
+		(SELECT varvalue FROM variables WHERE varname = 'conversionRate')) AS potential_units_sold_per_video, 
+    (avg_views_video * 
+		(SELECT varvalue FROM variables WHERE varname = 'conversionRate') * 
+			(SELECT varvalue FROM variables WHERE varname = 'productCost')) AS potential_revenue_per_video,
+    ((avg_views_video * (SELECT varvalue FROM variables WHERE varname = 'conversionRate') 
+		* (SELECT varvalue FROM variables WHERE varname = 'productCost')) - 
+			(SELECT varvalue FROM variables WHERE varname = 'ProductPlacementCost')) AS net_profit
+FROM 
+    ChannelData
+WHERE 
+    channel_name IN ('Fede Vigevani', 'YOLO AVENTURAS', 'Badabun') -- Youtubers with the most subscribers 
+ORDER BY
+    net_profit DESC; -- Order by net profit descending
+
+```
+
+#### YouTubers with the most total views
+Using a similar approach, I calculated the variables for the YouTube channels with most total views
+
+**Campaign idea: sponsored video series**
+- `Conversion Rate` = 2.00%
+- `Product Cost` = $5.00
+- `Sponsored Videos Cost` 11 videos at $5,000 each = $55,000
+
+| Rank | Channel | Total Views | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:--------- | --------: | ------------:| --------------:| ----------:| -------:| 
+| 1 | Masha y el Oso | 20,262,996,461 | 12,160,000 | 243,200 | 1,216,000 | 1,161,000 |
+| 2 | YOLO AVENTURAS | 20,524,794,143 | 7,600,000 | 152,000 | 760,000 | 705,000 |
+| 3 | Badabun | 19,911,915,821 | 830,000 | 16,600 | 83,000 | 28,000 |
+
+
+#### YouTubers with the most videos uploaded
+Finally, the results for the YouTube channels with the most videos uploaded were:
+
+**Campaign idea: Influencer marketing**
+- `Conversion Rate` = 2.00%
+- `Product Cost` = $5.00
+- `Influencer Marketing Cost` (3 Month Contract) = $130,000
+
+| Rank | Channel | Total Videos | Average Views per Video (M) | Potential Units Sold per Video | Potential Revenue per Video | Net Profit |
+| :--- |:------ | ----: | -------:| -----------:| ----------:| ----------:| 
+| 1 | Badabun | 24,080 | 830,000 | 16,600 | 83,000 | -47,000 |
+| 2 | Tu COSMOPOLIS | 11,926 | 440,000 | 8,800 | 44,000 | -86,000 |
+| 3 | Tlnovelas | 59,898 | 320,000 | 6,400 | 32,000 | -98,000 |
+
+---
+## Insights
+The YouTube landscape in Mexico is dominated by a variety of popular channels, each excelling in different aspects. Fede Vigevani, YOLO AVENTURAS, and Badabun are the channels with the highest number of subscribers, alluring a vast audience with their engaging content.
+
+When it comes to the volume of videos uploaded, Badabun leads, followed by Tlnovelas and Tu COSMOPOLIS, showcasing their dedication to consistently providing fresh content. Meanwhile, channels like Masha y el Oso, YOLO AVENTURAS, and Badabun are celebrated for their popularity and video views, demonstrating their widespread influence in the region. This mix of channels highlights the diverse tastes and preferences of the Mexican YouTube audience.
+
+### Collaboration Recommendations
+Fede Vigevani is the best YouTube channel to collaborate with if we want to maximize visibility because this channel has the most YouTube subscribers in Mexico and the highest average views per video. Although Badabun, Tu COSMOPOLIS, and Tlnovelas are regular publishers on YouTube, it may be worth considering whether collaborating with them within the current budget caps is worth the effort, as the potential return on investments is significantly lower and even negative compared to the other channels.
+
+The top 3 channels to form collaborations with are Fede Vigevani, Masha y el Oso, and YOLO AVENTURAS based on this analysis, because they attract the most engagement on their channels consistently.
+
+### Potential Return on Investment
+- Setting up a product placement collaboration with Fede Vigevani would make a net profit of $1,221,000 per video.
+- A sponsored video series contract with Masha y el Oso can generate a net profit of $1,161,000 per video.
+- A sponsored video series with YOLO AVENTURAS could generate approximately $705,000 per video, but a product placement campaign with them could generate $710,000 per video.
+- An influencer marketing campaign with the YouTube channels with the most videos uploaded is not recommended, as no positive profit would be generated using this approach.
+
+---
+## Action plan
+Based on this analysis, the best YouTube channel to advance a long-term partnership deal to promote our products is Fede Vigevani. Our plan is to:
+1. Reach out to the team behind the Fede Vigevani YouTube channel. The marketing team can negotiate contracts within the budgets allocated to each marketing campaign.
+2. Kick off the campaigns and track their performances against the KPIs.
+3. Review how the campaigns progress, gather insights, and optimize based on feedback from converted customers and each channel's audiences.
+4. Consider potential partnerships with other influencers in the future, such as Masha y el Oso and YOLO AVENTURAS.
+
+---
+## PowerBi Report
+To review the analysis in detail, you can download the Power BI Report [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/reports/mx_youtubers_2024report.pbix)
