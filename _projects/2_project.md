@@ -89,7 +89,7 @@ The marketing team needs to identify and collaborate with the most influential M
 
 ### Data source
 
-The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To view the CSV file, click [here](assets/data/project2_youtube_data_mexico.csv).
+The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download). To view the CSV file, click [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project2_youtube_data_mexico.csv).
 
 This dataset provides structured information about the top 100 YouTubers from Mexico in 2024. Each entry represents a YouTuber and includes the following attributes:
 
@@ -102,7 +102,7 @@ This dataset provides structured information about the top 100 YouTubers from Me
 | `COUNTRY` | The geographical location or country where the YouTuber is based or primarily operates |
 | `TOPIC OF INFLUENCE` | The niche or category in which the YouTuber specialises or creates content, such as fashion, beauty, technology, fitness, etc. |
 | `POTENTIAL REACH` | The estimated number of people who could see a YouTube video or campaign from this influencer |
-
+<br/>
 ### Tools
 - Excel: To explore the data.
 - PostgreSQL: To clean, test, and analyse the data.
@@ -111,4 +111,16 @@ This dataset provides structured information about the top 100 YouTubers from Me
 
 ### Data Cleaning
 Displayed below is a screenshot of a portion of the data presented in Excel.
+
+{% include figure.liquid path="assets/img/project2_kaggle_data_original.png" class="img-fluid rounded z-depth-1" %} 
+
+Review or improve this texto in British English:
+The objective is to refine our dataset, ensuring it is well-structured and primed for analysis.
+
+Criteria for the cleaned data:
+- Retain only the pertinent columns.
+- Ensure all data types are suitable for their respective columns.
+- Verify that no column contains null values, guaranteeing the completeness of all records.
+
+After the initial data exploration, I realised that some columns, such as `ER`, `COUNTRY`, and `TOPIC OF INFLUENCE`, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, I needed to extract this information from YouTube to complement our dataset. I used a Python script to extract this information from YouTube.
 
