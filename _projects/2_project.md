@@ -141,4 +141,123 @@ For the following steps, I used PostgreSQL. I changed the column names to lowerc
 {% include figure.liquid path="assets/img/project2_database_for_sql.png" class="img-fluid rounded z-depth-1" %} 
 
 
+### Data Transformation in SQL
+I developed a SQL script for data cleaning. For a detailed review of the script, click [here](assets/scripts/project2_sql-script-youtubers-mx.sql). The steps involved in the scripts were:
+1. Create the database.
+2. Create the table to store YouTube data.
+3. Import the data into the newly created table and verify proper loading.
+4. Create a view to simplify the data by selecting specific columns: `channel_name`, `total_subscribers`, `total_views` and `total_videos`.
+5. Perform data quality checks:
+ - a. Verify the number of rows: Top 100 YouTube channels.
+ - b. Verify the number of columns: `channel_name`, `total_subscribers`, `total_views` and `total_videos`
+ - c. Check the data type of each variable.
+ - d. Check the number of unique channels in the database or count the number of duplicate channels.
+6. Create a new table to export the data to a CSV file. To see the output file, click this [link](assets/data/project2_mx_youtubers_data2024.csv).
+
+{% include figure.liquid path="assets/img/project2_database_view_sql.png" class="img-fluid rounded z-depth-1" %} 
+
+
+**SQL code** 
+```sql  
+-- Create the database
+CREATE DATABASE youtube_mx_db;
+
+-- Create the table to store YouTube data
+CREATE TABLE IF NOT EXISTS youtube_mx
+(
+    rank smallint,
+    name character varying(100),
+    followers character varying(50),
+    er character varying(50),
+    country character varying(50),
+    topic_of_influence character varying(50),
+    potential_reach character varying(50),
+    channel_name character varying(100),
+    total_subscribers integer,
+    total_views bigint,
+    total_videos integer
+);
+
+/* After importing the data into the newly created table, 
+verify that the data was properly loaded */
+SELECT * 
+FROM youtube_mx
+LIMIT 10;
+
+-- Create a view to simplify the data by selecting specific columns 
+/* To practice SQL, you can create a view with the following columns: 
+
+CREATE VIEW view_mex_youtubers AS 
+	SELECT SUBSTRING(name, 1, strpos(name, '@') -1)::VARCHAR(100) AS 
+		channel_name, total_subscribers, total_views, total_videos FROM youtube_mx; 
+*/ 
+
+/* However, since the channel_name is already correctly formatted from the Python script, 
+and I manually entered stats for two channels at the end of the table, 
+we will create the view with these columns:
+*/
+CREATE view view_mex_youtubers AS
+	SELECT
+		channel_name,
+ 		total_subscribers, 
+ 		total_views,
+ 		total_videos
+ 	FROM
+ 		youtube_mx;
+
+-- Data quality check: 
+-- Verify the number of rows (Top 100 YouTube channels)
+SELECT
+	COUNT(*) AS num_rows
+FROM
+	view_mex_youtubers;
+
+-- Verify the number of columns 
+-- (channel_name, total_subscribers, total_views, total_videos)
+SELECT 
+	COUNT(*) AS column_count
+FROM
+	information_schema.columns
+WHERE 
+	TABLE_NAME ='view_mex_youtubers';
+
+-- Check the data type of each variable
+SELECT 
+	column_name,
+	data_type
+FROM
+	information_schema.columns
+WHERE 
+	TABLE_NAME ='view_mex_youtubers';
+
+-- Check the number of unique channels in the database
+SELECT
+	COUNT(DISTINCT(channel_name)) AS unique_channels
+FROM
+	view_mex_youtubers;
+
+-- Alternatively, count the number of duplicate channels
+SELECT 
+	channel_name,
+	COUNT(*) AS duplicates
+FROM 
+	view_mex_youtubers
+GROUP BY channel_name
+HAVING COUNT(*) > 1;
+
+-- Create a new table to export the data to a CSV file
+CREATE TABLE mexicans_youtubers AS
+	SELECT
+		channel_name,
+ 		total_subscribers, 
+ 		total_views,
+ 		total_videos
+ 	FROM
+ 		youtube_mx;
+
+-- Review the table
+SELECT *
+FROM mexicans_youtubers
+LIMIT 10;
+   ```  
 
