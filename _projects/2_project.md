@@ -154,7 +154,7 @@ I developed a SQL script for data cleaning. For a detailed review of the script,
  - d. Check the number of unique channels in the database or count the number of duplicate channels.
 6. Create a new table to export the data to a CSV file. To see the output file, click this [link](assets/data/project2_mx_youtubers_data2024.csv).
 
-{% include figure.liquid path="assets/img/project2_database_view_sql.png" class="img-fluid rounded z-depth-1" %} 
+{% include figure.liquid path="assets/img/project2_database_view_sql.png" class="img-fluid rounded z-depth-1" max-width="550px" max-height="500px" %} 
 
 
 **SQL code** 
@@ -260,4 +260,83 @@ SELECT *
 FROM mexicans_youtubers
 LIMIT 10;
    ```  
+
+### Analysis in Power BI
+I loaded the CSV file [mx_youtubers_data2024](assets/data/project2_mx_youtubers_data2024.csv) into a Power BI report, and the following image showed that the variables were correctly loaded.
+
+{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" %} 
+
+#### DAX measures
+I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
+
+**1. `AvgViewsPerVideo(M)`** <br />
+Computes the average number of views per video, expressed in millions, for a YouTube channel.
+```sql  
+AvgViewsPerVideo(M) =
+  VAR sumtotalviews = SUM(mx_youtubers_data2024[total_views])
+  VAR sumofvideos = SUM(mx_youtubers_data2024[total_videos])
+  VAR avgviewspervideo = DIVIDE(sumtotalviews, sumofvideos, BLANK())
+  VAR avgviewspervideomillions = DIVIDE(avgviewspervideo, 1000000, BLANK())
+
+  RETURN avgviewspervideomillions
+```
+<br />
+
+**2. `SubscriberEngagementRate`** <br />
+Calculates the average number of subscribers per video for a YouTube channel.
+```sql  
+SubscriberEngagementRate =
+  VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers])
+  VAR sumtotalvideos = SUM(mx_youtubers_data2024[total_videos])
+  VAR subscribersengrate = DIVIDE(sumtotalsubscribers, sumtotalvideos, BLANK())
+
+  RETURN subscribersengrate
+```
+<br />
+
+**3. `TotalSubscribers(M)`** <br />
+Converts the total number of subscribers into millions, making it easier to interpret large subscriber counts.
+```sql  
+TotalSubscribers(M) =
+  VAR million = 1000000
+  VAR sumofsubscribers = SUM(mx_youtubers_data2024[total_subscribers])
+  VAR totalsubscribers = DIVIDE(sumofsubscribers, million)
+
+  RETURN totalsubscribers
+```
+<br />
+
+**4. `TotalVideos`** <br />
+Sums up the total number of videos for a YouTube channel.
+```sql  
+TotalVideos =
+  VAR totalvideos = SUM(mx_youtubers_data2024[total_videos])
+
+  RETURN totalvideos
+```
+<br />
+
+**5. `TotalViews(B)`** <br />
+Converts the total number of views into billions, providing a clearer representation of large view counts.
+```sql  
+TotalViews(B) =
+  VAR billion = 1000000000
+  VAR sumoftotalviews = SUM(mx_youtubers_data2024[total_views])
+  VAR totalviews = DIVIDE(sumoftotalviews, billion, BLANK())
+
+  RETURN totalviews
+```
+<br />
+
+**6. `ViewsPerSubscriber`** <br />
+Determines the total number of views each subscriber has generated, offering insights into how engaged the subscriber base is with the channel's content.
+```sql  
+ViewsPerSubscriber =
+  VAR sumtotalsubscribers = SUM(mx_youtubers_data2024[total_subscribers])
+  VAR sumofviews = SUM(mx_youtubers_data2024[total_views])
+  VAR viewspersubscriber = DIVIDE(sumofviews, sumtotalsubscribers, BLANK())
+
+  RETURN viewspersubscriber
+```
+
 
