@@ -19,7 +19,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 >
 > Original Project Title: Excel to Power BI Portfolio Project. Full End-to-End Data Project. Top_uk_youtubers_2024. Author: Stephen David William. Platform: [YouTube](https://www.youtube.com/watch?v=mm_sN-Elplg&t=510s&ab_channel=Stephen%7CData)
 >
-> I have used this project as a foundation to expand my skills and knowledge in data analytics. All credit for the original concept and methodology goes to[Stephen David William](https://www.linkedin.com/in/stephen-david-williams-860428123/).
+> I have used this project as a foundation to expand my skills and knowledge in data analytics. All credit for the original concept and methodology goes to [Stephen David William](https://www.linkedin.com/in/stephen-david-williams-860428123/).
 <br/>
 
 
@@ -101,8 +101,9 @@ This dataset provides structured information about the top 100 YouTubers from Me
 | `ER`                 | Engagement Rate: The level of interaction that the influencer's content receives from users on social media platforms, expressed as a percentage |
 | `COUNTRY`            | The geographical location or country where the YouTuber is based or primarily operates                                                           |
 | `TOPIC OF INFLUENCE` | The niche or category in which the YouTuber specialises or creates content, such as fashion, beauty, technology, fitness, etc.                   |
-| `POTENTIAL REACH` | The estimated number of people who could see a YouTube video or campaign from this influencer                                                       |
+| `POTENTIAL REACH`    | The estimated number of people who could see a YouTube video or campaign from this influencer                                                    |
 
+<br/>
 
 ### Tools
 - Excel: To explore the data.
@@ -125,10 +126,19 @@ Criteria for the cleaned data:
 After the initial data exploration, I realised that some columns, such as `ER`, `COUNTRY`, and `TOPIC OF INFLUENCE`, are either irrelevant for our analysis or have missing values. Considering our primary goal and the desired solution, the dataset should contain information related to subscriber count, total views, total videos, and engagement metrics. Therefore, I needed to extract this information from YouTube to complement our dataset. I used a Python script to extract this information from YouTube.
 
 ### Extracting data from YouTube
-I implemented a Python script based on the script developed by Stephen David William, available on [GitHub]([https://github.com/sdw-online](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/scripts/project2_script_youtube_python.py). 
+I implemented a Python script based on the script developed by Stephen David William, available on  [GitHub](https://github.com/sdw-online/top_uk_youtubers_2024). To see the script I used, just click [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/scripts/project2_script_youtube_python.py). 
 
 After running the script, the dataset included four additional columns: `channel_name`,	`total_subscribers`,	`total_views` and `total_videos` as seen in the following image. However, the script did not extract data from two YouTubers, possibly due to unrecognised channel IDs.
 
 {% include figure.liquid path="assets/img/project2_data_updated.png" class="img-fluid rounded z-depth-1" %} 
+
+The script output found no data on these two channels, even though they actually exist on YouTube. Therefore, I decided to manually enter this data using the information from the 'About' section of these YouTube channels. I added this information at the end of the table so I could use Excel or SQL to sort the channels by their respective ranks based on `total_subscribers`,	`total_views` and `total_videos` later on. 
+
+{% include figure.liquid path="assets/img/project2_script_output.png" class="img-fluid rounded z-depth-1" %} 
+
+For the following steps, I used PostgreSQL. I changed the column names to lowercase with dashes instead of spaces and renamed the column `rank` instead of `#`n Excel before loading the data into SQL. The updated dataset can be found [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project2_updated_youtube_data_mex.csv) and the following image shows a view of this dataset.
+
+{% include figure.liquid path="assets/img/project2_database_for_sql.png" class="img-fluid rounded z-depth-1" %} 
+
 
 
