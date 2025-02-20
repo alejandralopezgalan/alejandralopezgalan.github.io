@@ -281,7 +281,6 @@ AvgViewsPerVideo(M) =
 
   RETURN avgviewspervideomillions
 ```
-<br />
 
 **2. `SubscriberEngagementRate`** <br />
 Calculates the average number of subscribers per video for a YouTube channel.
@@ -293,7 +292,6 @@ SubscriberEngagementRate =
 
   RETURN subscribersengrate
 ```
-<br />
 
 **3. `TotalSubscribers(M)`** <br />
 Converts the total number of subscribers into millions, making it easier to interpret large subscriber counts.
@@ -305,7 +303,6 @@ TotalSubscribers(M) =
 
   RETURN totalsubscribers
 ```
-<br />
 
 **4. `TotalVideos`** <br />
 Sums up the total number of videos for a YouTube channel.
@@ -315,7 +312,6 @@ TotalVideos =
 
   RETURN totalvideos
 ```
-<br />
 
 **5. `TotalViews(B)`** <br />
 Converts the total number of views into billions, providing a clearer representation of large view counts.
@@ -327,7 +323,6 @@ TotalViews(B) =
 
   RETURN totalviews
 ```
-<br />
 
 **6. `ViewsPerSubscriber`** <br />
 Determines the total number of views each subscriber has generated, offering insights into how engaged the subscriber base is with the channel's content.
@@ -380,7 +375,6 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 9    | Susy Mouriz                                        | 27.30           |
 | 10   | BabyBus - Canciones Infantiles & Videos para Niños | 26.80           |
 
-<br />
 
 2. Which 3 channels have uploaded the most videos?
 
@@ -389,7 +383,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | Tlnovelas     | 59898           |
 | 2    | Badabun       | 24080           |
 | 3    | Tu COSMOPOLIS | 11926           |
-<br />
+
 
 3. Which 3 channels have the most views?
 
@@ -398,7 +392,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | YOLO AVENTURAS | 20.52           |
 | 2    | Masha y el Oso | 20.26           |
 | 3    | Badabun        | 19.91           |
-<br />
+
 
 4. Which 3 channels have the highest average views per video?
 
@@ -407,7 +401,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | Christian Nodal       | 564.02                      |
 | 2    | Los Ángeles Azules    | 116.24                      |
 | 3    | vicentefernandez&reg; | 87.58                       |
-<br />
+
 
 5. Which 3 channels have the highest views per subscriber ratio?
 
@@ -416,7 +410,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | Los Ángeles Azules    | 1,490.62             |
 | 2    | Lizos Music           | 1,433.94             |
 | 3    | vicentefernandez&reg; | 1,316.36             |
-<br />
+
    
 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
 
@@ -425,6 +419,7 @@ Based on the information and the data analysis I have done so far, it is possibl
 | 1    | Kenia Os           | 1,203,333.33               |
 | 2    | Christian Nodal    | 610,526.32                 |
 | 3    | MrBeast en Español | 394,029.85                 |
+
 
 For this analysis, it is best to prioritise the metrics that are crucial in generating the expected ROI for our marketing team. These metrics are:
 - Top 3 YouTube channels with the most subscribers
