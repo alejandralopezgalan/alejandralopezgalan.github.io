@@ -103,7 +103,7 @@ This dataset provides structured information about the top 100 YouTubers from Me
 | `TOPIC OF INFLUENCE` | The niche or category in which the YouTuber specialises or creates content, such as fashion, beauty, technology, fitness, etc.                   |
 | `POTENTIAL REACH` | The estimated number of people who could see a YouTube video or campaign from this influencer                                                       |
 
-<br/> 
+
 ### Tools
 - Excel: To explore the data.
 - PostgreSQL: To clean, test, and analyse the data.
