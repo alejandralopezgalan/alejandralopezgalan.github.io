@@ -317,4 +317,4 @@ Users can interact with the dashboard to delve into these metrics and gain compr
 ---
 
 ## PowerBi Report
-To review the analysis in detail, you can download the Power BI Report [here](assets/report/Report-HR-analytics-in-PowerBI.pbix)
+To review the analysis in detail, you can download the Power BI Report [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/reports/project1-Report-HR-analytics-PowerBI.pbix)
