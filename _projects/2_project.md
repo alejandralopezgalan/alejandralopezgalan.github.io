@@ -265,7 +265,7 @@ LIMIT 10;
 ### Analysis in Power BI
 I loaded the CSV file [mx_youtubers_data2024](assets/data/project2_mx_youtubers_data2024.csv) into a Power BI report, and the following image showed that the variables were correctly loaded.
 
-{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" max-width="300px" max-height="200px" %} 
+{% include figure.liquid path="assets/img/project2_data_loaded-powerbi.png" class="img-fluid rounded z-depth-1" max-width="250px" max-height="150px" %} 
 
 #### DAX measures
 I constructed a table with all the essential measures for the analysis, employing DAX formulas to develop these metrics.
@@ -355,7 +355,6 @@ The interactive features of this dashboard:
 4. Bar Chart Interactivity: The bar chart permits highlighting and comparison of the top 10 YouTubers by total subscribers. Hovering over each bar displays a tooltip with more comprehensive subscriber information.
 
 {% include figure.liquid path="assets/img/project2_video_dashboard.gif" class="img-fluid rounded z-depth-1" %} 
-
 
 ### Data Analysis for the Marketing Campaign
 Based on the information and the data analysis I have done so far, it is possible to continue with the marketing analysis for the campaign. First, I focused on the following questions:
