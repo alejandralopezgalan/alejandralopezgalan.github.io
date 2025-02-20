@@ -22,6 +22,7 @@ Image from [storyset](https://storyset.com/search?q=video%20influencer)
 > I have used this project as a foundation to expand my skills and knowledge in data analytics. All credit for the original concept and methodology goes to [Stephen David William](https://www.linkedin.com/in/stephen-david-williams-860428123/).
 <br/>
 
+
 ---
 ## Table Of Contents
 - [Executive Summary](#executive-summary)
