@@ -9,7 +9,7 @@ related_publications: false
 ---
 
 
-{% include figure.liquid loading="eager" max-width="480px" max-height="600px" path=""assets/img/project2_portada_influencer.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" max-width="480px" max-height="600px" path="assets/img/project2_portada_influencer.png" class="img-fluid rounded z-depth-1" %}
 Image from [storyset](https://storyset.com/search?q=video%20influencer)
 
 > **Note**
