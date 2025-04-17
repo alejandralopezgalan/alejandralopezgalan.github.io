@@ -82,7 +82,7 @@ This analysis aims to address key business challenges through the strategic use 
 
 ## Methodology
 ### Data source
-[Kaggle](https://www.kaggle.com/datasets/laibaanwer/superstore-sales-dataset) served as the source for the dataset used in this project. Click [here](assets/data/project3_superstore_orders.csv) to access the CSV file directly.
+[Kaggle](https://www.kaggle.com/datasets/laibaanwer/superstore-sales-dataset) served as the source for the dataset used in this project. Click [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project3_superstore_orders.csv) to access the CSV file directly.
 
 This dataset provides comprehensive information about the sales of various products offered by the store. It includes related details such as geographical data, product categories and subcategories, sales figures, profit margins, and consumer insights.
 
