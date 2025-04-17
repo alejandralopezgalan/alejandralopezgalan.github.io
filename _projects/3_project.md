@@ -9,7 +9,6 @@ related_publications: false
 pretty_table: true
 ---
 
-
 {% include figure.liquid loading="eager" max-width="480px" max-height="600px" path="assets/img/project3-online-shopping.png" class="img-fluid rounded z-depth-1" %}
 Image from [storyset](https://storyset.com/search?q=online%20shopping)
 
@@ -83,3 +82,66 @@ This analysis aims to address key business challenges through the strategic use 
 
 ## Methodology
 ### Data source
+[Kaggle](https://www.kaggle.com/datasets/laibaanwer/superstore-sales-dataset) served as the source for the dataset used in this project. Click [here](assets/data/project3_superstore_orders.csv) to access the CSV file directly.
+
+This dataset provides comprehensive information about the sales of various products offered by the store. It includes related details such as geographical data, product categories and subcategories, sales figures, profit margins, and consumer insights.
+
+| Column name | Description | 
+| :--- | :--- |
+| `order_id` | A unique identifier assigned to each order | 
+| `order_date` | The date on which a customer placed their order | 
+| `ship_date` | The shipping date corresponding to the order | 
+| `ship_mode` | The shipping method chosen for the order | 
+| `customer_name` | The customer's full name. | 
+| `segment` | The segment type associated with the order. | 
+| `state` | The state where the order was placed. | 
+| `country` | The country in which the order was placed. | 
+| `market` | The market related to the order. Markets include Africa (Africa), Asia and Pacific (APAC), Canada (Canada), Europe, the Middle East, and Africa (EMEA), Europe (EU), Latin America (LATAM), and the United States of America (US). | 
+| `region` | The region within the market where the order was originated. | 
+| `product_id` | A unique identifier assigned to each product. | 
+| `category` | The product's main category. | 
+| `sub_category` | The product's subcategory. | 
+| `product_name` | The name of the product. | 
+| `sales` | The total sales revenue generated for an order, measured in US dollars. | 
+| `quantity` | The number of products included in each order. | 
+| `discount` | The discount applied to the order. | 
+| `profit` | The profit generated from the sale of an order. | 
+| `shipping_cost` | The shipping cost incurred for the order. | 
+| `order_priority` | The priority level assigned to each order. | 
+| `year` | The year in which the order was placed. | 
+
+### Tools
+- Excel: Used for exploring, cleaning, analysing, and visualising the data through a dashboard.
+
+
+### Data Cleaning and Transformation
+After importing the dataset into Excel and converting the file into an Excel Worksheet, the data was transformed into an Excel Table to facilitate easier management and analysis. The dataset already included a year column; however, it was beneficial to use an Excel formula to extract the year from the `order_date` column. First, the `order_date` column was formatted as a Date. Then, an Excel formula was applied to extract the year, which was subsequently formatted as a number without decimals and named `order_year`.
+
+In most businesses, each customer is assigned a unique customer ID; however, this variable was missing in the dataset. By leveraging the `customer_name` variable, it was possible to identify unique customers using a conditional Excel formula that counts each time a new customer is added to the database. This new variable was named `customer_unique`. A similar approach was taken to count the unique number of orders. Using the `order_id` column, a conditional formula was applied to count unique order IDs. This newly created variable was named `order_unique`.
+
+### Data Analysis
+The initial step involved estimating four KPIs using Pivot Tables: Total Sales (USD), Number of Unique Orders, and Number of Unique Customers. Additionally, a calculated field was created to estimate the Average Sales per Order (USD), with the result displayed to two decimal places.
+
+Pivot Tables were then used to calculate Total Sales by Quarter and Total Sales by Year, employing the `order_year` variable to analyse sales trends over time.
+
+To evaluate regional performance, a Pivot Table was created to examine Total Sales by Market. Another Pivot Table identified the Top 10 Countries Leading in Total Sales (USD).
+
+For customer insights, a Pivot Table estimated the Total Sales (USD) for three segments: Consumer, Corporate, and Home Office. Additionally, customer preferences for shipping modes were analysed by calculating the percentage of total orders for each mode.
+Finally, product insights were derived using Pivot Tables to review Total Sales (USD) by Product Category and Subcategory, as well as the Top 10 Best-Selling Products (USD).
+
+
+### Excel formulae
+| Formula | Description | 
+| :--- | :--- |
+| `=YEAR([@[order_date]])` | Extract the Year from the order date |
+| `=IF(COUNTIF(F$2:F2,F2)=1,1,0) ` | Count each unique customer. Assigns a value of 1 if the customer is unique and 0 if the customer is repeated.  |
+| `=IF(COUNTIF(A$2:A2,A2)=1,1,0) ` | Counts each unique `order_id`. Assigns a value of 1 if the `order_id` is unique and 0 if repeated |
+| `Avg Sales per Order = sales/ order_unique` | A calculated field used to estimate the average sales per order  |
+
+### Data Visualisation
+
+Using the insights derived from the pivot tables, the next step involved creating a series of visuals to include in the dashboard. First, two slicers for `order_year` and `market` were added to enable filtering across the visuals.
+The values from four KPIs—**Total Sales (USD), Number of Unique Orders, Number of Unique Customers,** and **Average Sales per Order (USD)**—were displayed at the top of the dashboard using four cards.
+To illustrate the **Sales Trend**, two charts were created: a line chart showing the **Quarterly Breakdown of Total Sales (USD)** and a bar chart depicting the **Annual Sales Performance (USD)**.
+
+{% include figure.liquid loading="eager" path="assets/img/project3_dashboard1.png" class="img-fluid rounded z-depth-1" %}
