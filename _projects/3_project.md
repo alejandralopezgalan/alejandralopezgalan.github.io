@@ -134,9 +134,9 @@ Finally, product insights were derived using Pivot Tables to review Total Sales 
 | Formula | Description | 
 | :--- | :--- |
 | `=YEAR([@[order_date]])` | Extract the Year from the order date |
-| `=IF(COUNTIF(F$2:F2,F2)=1,1,0) ` | Count each unique customer. Assigns a value of 1 if the customer is unique and 0 if the customer is repeated.  |
-| `=IF(COUNTIF(A$2:A2,A2)=1,1,0) ` | Counts each unique `order_id`. Assigns a value of 1 if the `order_id` is unique and 0 if repeated |
-| `Avg Sales per Order = sales/ order_unique` | A calculated field used to estimate the average sales per order  |
+| `=IF(COUNTIF(F$2:F2,F2)=1,1,0)` | Count each unique customer. Assigns a value of 1 if the customer is unique and 0 if the customer is repeated |
+| `=IF(COUNTIF(A$2:A2,A2)=1,1,0)` | Counts each unique `order_id`. Assigns a value of 1 if the `order_id` is unique and 0 if repeated |
+| `Avg Sales per Order = sales/ order_unique` | A calculated field used to estimate the average sales per order |
 
 ### Data Visualisation
 
@@ -145,3 +145,32 @@ The values from four KPIs—**Total Sales (USD), Number of Unique Orders, Number
 To illustrate the **Sales Trend**, two charts were created: a line chart showing the **Quarterly Breakdown of Total Sales (USD)** and a bar chart depicting the **Annual Sales Performance (USD)**.
 
 {% include figure.liquid loading="eager" path="assets/img/project3_dashboard1.png" class="img-fluid rounded z-depth-1" %}
+
+To analyse **Regional Performances**, a vertical bar chart was used to present the **Market-Wise Breakdown of Total Sales (USD)**, while a horizontal bar chart highlighted the **Top 10 Countries Leading in Total Sales (USD)**.
+{% include figure.liquid loading="eager" path="assets/img/project3_dashboard2.png" class="img-fluid rounded z-depth-1" %}
+
+
+For **Customer Insights**, two charts were added: one showing the **Total Sales Distribution Across Customer Segments** and the other highlighting **Customer Preferences for Shipping Modes**, expressed as a percentage of total orders.
+{% include figure.liquid loading="eager" path="assets/img/project3_dashboard3.png" class="img-fluid rounded z-depth-1" %}
+
+
+Finally, for **Product Insights**, a bar chart displayed the **Total Sales (USD) by Product Category and Subcategory**, accompanied by a table listing the **Top 10 Best-Selling Products (USD)**.
+{% include figure.liquid loading="eager" path="assets/img/project3_dashboard4.png" class="img-fluid rounded z-depth-1" %}
+
+
+Watch a brief video showcasing the full dashboard by clicking the following link:
+{% include video.liquid path="https://drive.google.com/file/d/1LV4eHAoR0hDBdny-1K-f_2Kj_JbUOsyA/view?usp=sharing" class="img-fluid rounded z-depth-1" %}
+[Dashboard video](https://drive.google.com/file/d/1LV4eHAoR0hDBdny-1K-f_2Kj_JbUOsyA/view?usp=sharing)
+
+## Insights
+- Between 2011 and 2014, total sales reached $12,642,905 USD, generated from 25,035 unique orders placed by 795 customers, with an average order value of $505.01 USD 
+- According to the data, the Superstore has not acquired any new unique customers since 2011, but sales and the number of unique orders have steadily increased year after year.  
+- Over the past three years, sales consistently declined in the final quarter of each year; however, they tended to increase again in the following year.  
+- From 2011 to 2014, annual sales rose by $2,040,530, reflecting an impressive growth of approximately 90%.  
+- Asia-Pacific (APAC), the United States (US), and Europe (EU) consistently ranked as the top three markets, solidifying their status as the cornerstone of the Superstore's global success.  
+- During this period, the United States, Australia, and France led as the countries with the highest number of orders placed.  
+- Most customers are individuals purchasing goods or services for personal use rather than organisational needs.  
+- The majority of customers preferred lower shipping costs, opting for the standard class shipping mode.  
+- The top-selling products included chairs, phones, and storage items, showcasing customer preferences for functional and versatile items across various categories.  
+
+
