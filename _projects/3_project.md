@@ -131,12 +131,13 @@ Finally, product insights were derived using Pivot Tables to review Total Sales 
 
 
 ### Excel formulae
-| Formula | Description | 
-| :--- | :--- |
-| `=YEAR([@[order_date]])` | Extract the Year from the order date |
-| `=IF(COUNTIF(F$2:F2,F2)=1,1,0)` | Count each unique customer. Assigns a value of 1 if the customer is unique and 0 if the customer is repeated |
-| `=IF(COUNTIF(A$2:A2,A2)=1,1,0)` | Counts each unique `order_id`. Assigns a value of 1 if the `order_id` is unique and 0 if repeated |
-| `Avg Sales per Order = sales/ order_unique` | A calculated field used to estimate the average sales per order |
+
+|Formula|Description| 
+|:---|:---|
+|`=YEAR([@[order_date]])`|Extract the Year from the order date|
+|`=IF(COUNTIF(F$2:F2,F2)=1,1,0)` | Count each unique customer. Assigns a value of 1 if the customer is unique and 0 if the customer is repeated|
+|`=IF(COUNTIF(A$2:A2,A2)=1,1,0)` | Counts each unique `order_id`. Assigns a value of 1 if the `order_id` is unique and 0 if repeated|
+|`Avg Sales per Order = sales/ order_unique`| A calculated field used to estimate the average sales per order|
 
 ### Data Visualisation
 
@@ -159,8 +160,8 @@ Finally, for **Product Insights**, a bar chart displayed the **Total Sales (USD)
 
 
 Watch a brief video showcasing the full dashboard by clicking the following link:
-{% include video.liquid path="https://drive.google.com/file/d/1LV4eHAoR0hDBdny-1K-f_2Kj_JbUOsyA/view?usp=sharing" class="img-fluid rounded z-depth-1" %}
-[Dashboard video](https://drive.google.com/file/d/1LV4eHAoR0hDBdny-1K-f_2Kj_JbUOsyA/view?usp=sharing)
+{% include video.liquid path="https://youtu.be/TYS4Aw7CqK8" class="img-fluid rounded z-depth-1" %}
+
 
 ## Insights
 - Between 2011 and 2014, total sales reached $12,642,905 USD, generated from 25,035 unique orders placed by 795 customers, with an average order value of $505.01 USD 
@@ -173,4 +174,47 @@ Watch a brief video showcasing the full dashboard by clicking the following link
 - The majority of customers preferred lower shipping costs, opting for the standard class shipping mode.  
 - The top-selling products included chairs, phones, and storage items, showcasing customer preferences for functional and versatile items across various categories.  
 
+{% include figure.liquid loading="eager" path="assets/img/project3_insights1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/project3_insights2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/project3_insights3.png" class="img-fluid rounded z-depth-1" %}
 
+## Action plan
+A recommended action plan tailored to the trends and observations from the analysis:
+
+### 1. Customer Acquisition Strategy
+   - **Issue Identified**: No new unique customers since 2011.  
+   - **Implementation roadmap**:  
+     - Launch targeted marketing campaigns (e.g., social media, email) focused on acquiring new customers.  
+     - Offer referral incentives to existing customers for bringing in new buyers.  
+     - Partner with influencers or businesses in your top-performing regions (US, Australia, France) to reach untapped audiences.
+
+### 2. Boosting Sales in Q4
+   - **Issue Identified**: Declining sales during the last quarter of each year.  
+   - **Implementation roadmap**:  
+     - Implement Q4-exclusive promotions or discounts (e.g., holiday or end-of-year sales).  
+     - Begin pre-holiday marketing campaigns earlier to create anticipation.  
+     - Focus on top-performing product categories (chairs, phones, storage items) and bundle them for holiday gifting.  
+
+### 3. Product and Shipping Optimisation
+   - **Issue Identified**: Customers prefer affordable shipping and practical, versatile products.  
+   - **Implementation roadmap**:  
+     - Strengthen inventory of top-selling products (e.g., chairs, phones, storage items).  
+     - Offer discounts or loyalty points for selecting standard shipping to further encourage its use.  
+     - Explore partnerships with shipping companies to reduce overall delivery costs.
+
+### 4. Maximising Regional Performance
+   - **Insight**: APAC, US, and EU are top markets, and US, Australia, and France lead in orders.  
+   - **Implementation roadmap**:  
+     - Tailor region-specific promotions or exclusive product lines to reinforce loyalty in these markets.  
+     - Identify emerging markets near these regions for possible expansion (e.g., Canada, New Zealand, or nearby EU countries).  
+     - Conduct customer surveys to better understand regional preferences and adapt offerings accordingly.
+
+### 5. Customer Retention Initiatives
+   - **Insight**: Most clients are individual consumers.  
+   - **Implementation roadmap**:  
+     - Develop a customer loyalty programme with personalised rewards.  
+     - Offer personalised recommendations based on past purchases to encourage repeat orders.  
+     - Enhance post-purchase support to ensure customer satisfaction and strengthen brand loyalty.
+
+## Excel Report
+To review the analysis in detail, you can download the Excel Report [here.](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project3_superstore_orders_report.xlsx)
