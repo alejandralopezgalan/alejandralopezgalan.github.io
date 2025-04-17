@@ -159,8 +159,9 @@ Finally, for **Product Insights**, a bar chart displayed the **Total Sales (USD)
 {% include figure.liquid loading="eager" path="assets/img/project3_dashboard4.png" class="img-fluid rounded z-depth-1" %}
 
 
-Watch a brief video showcasing the full dashboard by clicking the following link:
-{% include video.liquid path="https://www.youtube.com/embed/TYS4Aw7CqK8?si=n9BHe8U5fz4gw_gy" class="img-fluid rounded z-depth-1" %}
+Watch a brief video showcasing the full dashboard here:
+% include video.liquid path="assets/video/project3_video_dashboard.mp4" class="img-fluid rounded z-depth-1" controls=true %
+
 
 ## Insights
 - Between 2011 and 2014, total sales reached $12,642,905 USD, generated from 25,035 unique orders placed by 795 customers, with an average order value of $505.01 USD 
