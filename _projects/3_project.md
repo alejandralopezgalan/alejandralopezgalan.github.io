@@ -141,8 +141,9 @@ Finally, product insights were derived using Pivot Tables to review Total Sales 
 |`=IF(COUNTIF(A$2:A2,A2)=1,1,0)` | Counts each unique `order_id`. Assigns a value of 1 if the `order_id` is unique and 0 if repeated|
 |`Avg Sales per Order = sales/ order_unique`| A calculated field used to estimate the average sales per order|
 
-### Data Visualisation
+<br/>
 
+### Data Visualisation
 Using the insights derived from the pivot tables, the next step involved creating a series of visuals to include in the dashboard. First, two slicers for `order_year` and `market` were added to enable filtering across the visuals.
 The values from four KPIs—**Total Sales (USD), Number of Unique Orders, Number of Unique Customers,** and **Average Sales per Order (USD)**—were displayed at the top of the dashboard using four cards.
 To illustrate the **Sales Trend**, two charts were created: a line chart showing the **Quarterly Breakdown of Total Sales (USD)** and a bar chart depicting the **Annual Sales Performance (USD)**.
