@@ -110,6 +110,8 @@ This dataset provides comprehensive information about the sales of various produ
 | `order_priority` | The priority level assigned to each order. | 
 | `year` | The year in which the order was placed. | 
 
+<br/>
+
 ### Tools
 - Excel: Used for exploring, cleaning, analysing, and visualising the data through a dashboard.
 
@@ -160,7 +162,7 @@ Finally, for **Product Insights**, a bar chart displayed the **Total Sales (USD)
 
 
 Watch a brief video showcasing the full dashboard here:
-% include video.liquid path="assets/video/project3_video_dashboard.mp4" class="img-fluid rounded z-depth-1" controls=true %
+{% include video.liquid path="assets/video/project3_video_dashboard.mp4" class="img-fluid rounded z-depth-1" controls=true %}
 
 
 ## Insights
