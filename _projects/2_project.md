@@ -144,7 +144,7 @@ For the following steps, I used PostgreSQL. I changed the column names to lowerc
 
 
 ### Data Transformation in SQL
-I developed a SQL script for data cleaning. For a detailed review of the script, click [here](assets/scripts/project2_sql-script-youtubers-mx.sql). The steps involved in the scripts were:
+I developed a SQL script for data cleaning. For a detailed review of the script, click [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/scripts/project2_sql-script-youtubers-mx.sql). The steps involved in the scripts were:
 1. Create the database.
 2. Create the table to store YouTube data.
 3. Import the data into the newly created table and verify proper loading.
