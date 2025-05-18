@@ -42,7 +42,12 @@ Image from [storyset](https://storyset.com/search?q=online%20shopping)
   - [Excel Formulae](#excel-formulae)
   - [Data Visualisation](#data-visualisation)
 - [Insights](#insights)
-- [Action Plan](#action-plan)	 
+- [Action Plan](#action-plan)
+  - [1. Customer Acquisition Strategy](#1.Customer-Acquisition-Strategy)
+  - [2. Boosting Sales in Q4](#2.-Boosting-Sales-in-Q4)
+  - [3. Product and Shipping Optimisation](#3.-Product-and-Shipping-Optimisation)
+  - [4. Maximising Regional Performance](#4.-Maximising-Regional-Performance)
+  - [5. Customer Retention Initiatives](#5.-Customer-Retention-Initiatives)  
 - [Excel Report](#excel-report)	
 
 
