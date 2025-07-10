@@ -36,6 +36,7 @@ Image from [storyset](https://storyset.com/search?q=online%20shopping)
   - [Goals](#goals)
 - [Methodology](#methodology)
   - [Data Source](#data-source)
+  - [Data Overview](#data-overview)
   - [Tools](#tools)
   - [Data Cleaning and Transformation](#data-cleaning-and-transformation)
   - [Data Analysis](#data-analysis)
@@ -96,6 +97,7 @@ The superstore is experiencing stagnation in customer acquisition and recurring 
 ### Data source
 [Kaggle](https://www.kaggle.com/datasets/laibaanwer/superstore-sales-dataset) served as the source for the dataset used in this project. Click [here](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/project3_superstore_orders.csv) to access the CSV file directly.
 
+### Data Overview
 This dataset provides comprehensive information about the sales of various products offered by the store. It includes related details such as geographical data, product categories and subcategories, sales figures, profit margins, and consumer insights.
 
 | Column name | Description | 
