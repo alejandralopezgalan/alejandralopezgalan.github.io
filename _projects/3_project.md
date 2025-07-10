@@ -53,37 +53,44 @@ Image from [storyset](https://storyset.com/search?q=online%20shopping)
 
 ## Executive Summary
 ### Primary Goal
-The objective is to analyse the superstore dataset to uncover actionable insights that drive strategic business decisions and enhance overall performance. By examining key metrics—such as sales trends, customer demographics, and product categories—this analysis aims to identify meaningful patterns, reveal growth opportunities, and detect operational inefficiencies.
+The objective is to analyse the Superstore dataset to uncover actionable insights that support strategic business decisions and enhance overall performance. By examining key metrics, such as sales trends, customer demographics, product categories, and regional activity, this analysis aims to identify meaningful patterns, reveal growth opportunities, and address operational inefficiencies.
 
 ### Solution
-An interactive dashboard will be developed to deliver actionable insights derived from the superstore dataset. This dashboard will focus on analysing key metrics, including sales trends, customer demographics, and product categories. The insights gained will help to identify patterns, uncover growth opportunities, and address inefficiencies. This tool will empower the business team to make informed, data-driven decisions, ultimately improving strategic outcomes and performance.
-
+To enable data-driven decision-making, an interactive dashboard will be developed to uncover insights from the Superstore dataset. Tailored for business stakeholders such as sales managers and marketing analysts, this dashboard will visualise:
+- Sales trends by time and product category
+- Customer demographics and behaviour
+- Regional performance breakdowns
+The dashboard will empower users to detect patterns quickly, monitor growth drivers, and remedy inefficiencies, ultimately supporting improved strategic outcomes.
 
 ### Key Findings
-From 2011 to 2014, total sales reached $12,642,905 USD across 25,035 unique orders, with an average order value of $505.01 USD. While no new unique customers were acquired during this period, both sales and order volumes showed consistent annual growth.  
-
-Notably, sales experienced a recurring decline in the final quarter of each year but rebounded in the subsequent year, contributing to an overall sales increase of $2,040,530, a remarkable 90% growth over the three years.  
-
-Geographically, Asia-Pacific (APAC), the United States (US), and Europe (EU) consistently emerged as the top-performing regions. Within these markets, the United States, Australia, and France led in the number of orders placed.  
-
-Customer behaviour insights revealed a strong preference for standard class shipping, driven by lower costs, and an inclination towards purchasing functional and versatile products such as chairs, phones, and storage items. The majority of customers comprised individuals shopping for personal use rather than organisational needs.  
+- Between 2011–2014, total sales reached $12,642,905 USD across 25,035 unique orders, with an average order value of $505.01 USD.
+- While overall annual growth was substantial (+90% over three years), no new customers were acquired—potentially due to dataset constraints or insufficient outreach.
+- A recurring Q4 downturn was identified each year, followed by a rebound in early Q1.
+- Top-performing regions included Asia-Pacific (APAC), United States (US), and Europe (EU). Within these, the US, Australia, and France led in order volume.
+- Customers favoured standard class shipping due to its affordability, and consistently selected practical products such as chairs, phones, and storage items.
+- The majority of purchases were made by individual consumers, rather than businesses or organisations.
 
 ### Recommendations
-1. **Customer Acquisition**: Introduce targeted marketing campaigns and referral incentives to attract new customers, particularly in top-performing regions like the United States, Australia, and France.  
-2. **Addressing Q4 Declines**: Mitigate recurring Q4 sales declines by launching early holiday campaigns, offering exclusive promotions, and bundling top-selling products (e.g., chairs, phones, and storage items) for seasonal appeal.  
-3. **Shipping and Product Strategy**: Enhance inventory management for high-demand products while promoting the cost-effectiveness of standard class shipping through discounts or loyalty rewards.  
-4. **Regional Optimisation**: Strengthen engagement in core markets (APAC, US, EU) with tailored promotions and explore potential growth in emerging nearby markets.  
-5. **Customer Retention**: Build loyalty through personalised rewards, customised product recommendations, and improved post-purchase support to reinforce repeat business.  
+- **Customer Acquisition:** Introduce targeted marketing campaigns and referral incentives in high-performing regions (US, Australia, France) to attract new customers.
+- **Seasonal Sales Stability:** Address Q4 slumps with early festive promotions, bundled top-selling products, and seasonal marketing efforts.
+- **Shipping & Inventory Strategy:** Ensure availability for high-demand categories and amplify the benefits of standard class shipping through loyalty rewards.
+- **Regional Optimisation:** Strengthen outreach in core markets (APAC, US, EU) via tailored promotions and explore expansion into nearby emerging markets such as Latin America or Eastern Europe.
+- **Customer Retention:** Implement personalised loyalty tiers based on purchasing behaviour, offer customised product recommendations, and improve post-purchase support to encourage repeat business.
 
 ## Introduction
+This analysis tackles core business challenges through the strategic interpretation of sales data. By leveraging customer segmentation, evaluating product performance, and exploring geographic trends, it identifies key growth levers and operational constraints. The aim is to develop bespoke strategies that enhance customer satisfaction, streamline operations, and drive profitability—laying the foundation for sustainable expansion through informed, data-led decision-making.
+
 ### Business Problem
-This analysis aims to address key business challenges through the strategic use of sales data. By leveraging customer segmentation, it identifies high-value consumer groups to refine marketing approaches. It evaluates product performance to optimise stock levels and boost sales, while uncovering regional opportunities through the examination of geographical trends. Additionally, the analysis explores sales patterns and customer behaviour to derive actionable insights that drive growth, improve customer satisfaction, and maximise profitability. The ultimate goal is to establish data-driven strategies that enhance business performance and support sustainable expansion.
+The superstore is experiencing stagnation in customer acquisition and recurring sales declines in the fourth quarter of each year. Despite steady annual growth, no new customers were added between 2011 and 2014, posing a risk to long-term sustainability. Furthermore, demand for high-performing products (e.g., chairs, phones, and storage items) is not being fulfilled efficiently, whilst regional sales strategies lack precision. These issues constrain profitability and hinder expansion. This analysis seeks to uncover performance trends, customer segments, and regional opportunities to craft focused strategies that enhance acquisition, stabilise seasonal sales, and streamline operations.
 
 ### Goals
-- Refine marketing strategies by pinpointing high-value consumer groups and tailoring campaigns to their preferences.
-- Optimise inventory management through product performance analysis and accurate demand forecasting to maintain efficient stock levels.
-- Uncover regional opportunities by identifying geographical trends and improving sales in underperforming areas.
-- Maximise profitability by analysing sales patterns and profit margins, enabling focus on high-impact products or categories.
+- **Summarise Multi-Year Sales Performance:** Present a high-level overview of superstore sales trends from 2011 to 2014—total revenue, order volumes, average order value, and year-on-year growth—to contextualise historical performance.
+- **Highlight Revenue Drivers by Category and Region:** Identify which product categories (e.g. chairs, phones, storage) and regions (APAC, US, EU) contributed most to sales, helping stakeholders focus marketing and inventory efforts.
+- **Support Strategic Decision-Making:** Surface actionable visualisations on customer acquisition gaps, shipping preferences, and top markets to inform targeted campaigns, inventory optimisation and regional expansion.
+- **Create a Visually Intuitive Dashboard Experience:** Design a clean, coherent Excel dashboard layout with clear labels, logical grouping and straightforward navigation, ensuring accessibility for users of all data-literacy levels.
+- **Empower Customer Segmentation Analysis:** Integrate demographic and purchase-type filters to distinguish personal vs. organisational buyers, revealing high-value segments for tailored acquisition and retention strategies.
+- **Optimise Shipping Strategy Insights:** Chart shipping-class usage patterns and cost implications to recommend incentives that drive greater adoption of standard-class shipping and reduce fulfilment costs
+
 
 ## Methodology
 ### Data source
