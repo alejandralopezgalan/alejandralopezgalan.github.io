@@ -86,3 +86,103 @@ Adventure Works, a multinational retail company, manages a diverse product portf
 - Reveal Seasonal and Temporal Patterns: Analyse time-based trends to uncover seasonal spikes or declines in sales, guiding future planning and promotional activities.
 - Support Strategic Decision-Making: Provide actionable insights through visualisations that help stakeholders evaluate investment, inventory, and marketing strategies.
 - Create a Visually Intuitive Dashboard Experience: Ensure the layout is clean, coherent, and easily navigable—making the dashboard approachable for users with varying data literacy levels.
+
+## Methodology
+### Data source
+The dataset used in this project was provided as part of a tutorial from the Data with Decision [YouTube channel](https://www.youtube.com/watch?v=VxOOt2dP8Jw&ab_channel=DatawithDecision). It features transactional sales records from the fictional company Adventure Works, commonly employed in training scenarios for data analysis and dashboard development. All data was made available for educational purposes and aligns with the instructional content presented in the original video.
+
+### Data Overview
+The project utilises the [AdventureWorks.xlsx](https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/data/Project5_AdventureWorks_Database.xlsx) workbook, which contains six relational tables:
+- `FactInternetSales`: The central fact table housing over 60,000 rows of transactional records, linked to other tables through keys such as `ProductKey`, `CustomerKey`, `SalesTerritoryKey`, and date fields. It stores detailed sales metrics including quantities, discounts, costs, and revenue values. 
+- `DimCustomer`: Provides detailed customer demographics and contact attributes, comprising 18,484 individual records. This dimension links to the fact table via CustomerKey, and includes variables such as full name, birth date, marital status, income level, multilingual education and occupation details, geographical location, purchase history, and commuting distance. It enriches the sales model with personal and regional context for more targeted analysis.
+- `DimDate`: A dedicated calendar dimension comprising 1,461 date records. It supports time-based analysis by providing structured fields such as full date values, day and month names in multiple languages (English, Spanish, French), and hierarchical attributes for calendar and fiscal periods.
+- `DimProduct`: Contains 606 records detailing product-level attributes used for sales analysis. This table is linked to the central fact table via ProductKey, and includes fields for product category, colour, size, cost, list pricing, manufacturing specifics, and availability dates. It also features multilingual product descriptions, supporting accessibility and localisation across global markets.
+- `DimGeography`: Consists of 655 records offering geographical context for customer data. This dimension includes city, state or province, postal code, and country fields, along with regional identifiers that support location-based analysis. Country names are provided in English, Spanish, and French, enabling multilingual reporting and global segmentation. 
+- `DimSalesTerritory`: Comprises 10 records that provide a higher-level classification of global sales regions. This dimension includes fields for territory name, country grouping, and territory image identifiers. It enables segmentation and comparative analysis across broader geographical markets, supporting strategic insight into regional performance.
+
+All tables form an integrated data model that enables robust cross-dimensional analysis. The dataset is fictional and provided exclusively for educational purposes, aligning with the structure and learning goals outlined in the original YouTube tutorial and this project. It serves as a practical foundation for developing analytical capabilities, data visualisation skills, and professional dashboard design in a simulated business context.
+
+### Tools
+- Microsoft Excel: Utilised for exploring, cleaning, transforming, and visualising the data through an interactive dashboard. The project also incorporates Power Query to load and shape multiple relational tables efficiently, forming the foundation of the data model.
+
+### Data Cleaning and Transformation
+Power Query was used to load the six relational tables from the AdventureWorks workbook, establish connections, create new measures, and select only the columns relevant to the dashboard analysis. 
+
+#### FactInternetSales
+ Performance insights were developed using the following variables from the `FactInternetSales` dataset:
+`ProductKey`, `OrderDateKey`, `DueDateKey`, `ShipDateKey`, `CustomerKey`, `SalesTerritoryKey`, `OrderQuantity`, `UnitPrice`, `ProductStandardCost` (renamed as `Cost`), and `OrderDate`.
+
+Several calculated fields were added to enrich the dataset:
+- `TotalRevenue`: Defined as `OrderQuantity * UnitPrice`, this measure was used to calculate gross sales revenue. It was formatted as a Currency-type variable.
+- Cost of Goods Sold (`COGS`): Calculated using `OrderQuantity * Cost`, this metric estimates product-level expenditure. It was also formatted as a Currency-type variable.
+- `TotalProfit`: Estimated with the formula `TotalRevenue – COGS`, representing net profit per transaction. This field was formatted as Currency.
+- `Product Price Type`: A conditional text field categorising products based on unit price, if UnitPrice ≤ 150 then "Less Expensive", else "Expensive". It was formatted as a Text-type variable to enable segmentation.
+
+#### DimCustomer
+The following columns were retained from the `DimCustomer` table to support performance analysis: 
+`CustomerKey`,	`GeographyKey`,	`CustomerAlternateKey`,	`BirthDate`,	and `Gender`.
+
+Additional fields were introduced to enhance segmentation and demographic insights:
+- `Full Name`: Created by combining the `FirstName` and `LastName` fields into a single text variable.
+- `Customer Age`: Derived using a Power Query formula to calculate the customer’s age based on their `BirthDate`.
+
+``` 
+= Table.AddColumn(#"Choose Column", "Customer Age", each 
+  let 
+    source = #date[BirthDate],
+    Today = Date.From(DateTime.LocalNow()),
+    Age = Duration.From(Today - [BirthDate]),
+    Years = Duration.From(Duration.From(Age) / #duration(365,0,0,0)) 
+  in 
+    Years)
+```
+
+- `Age Group`: A conditional Text-type variable categorising customers into age bands using the following logic:
+``` 
+= Table.AddColumn(#"Changed Type1", "Age Group", each 
+  if [Customer Age] <= 24 then "0–24" 
+  else if [Customer Age] <= 29 then "25–29" 
+  else if [Customer Age] <= 34 then "30–34" 
+  else if [Customer Age] <= 39 then "35–39" 
+  else if [Customer Age] <= 44 then "40–44" 
+  else if [Customer Age] <= 49 then "45–49" 
+  else "50 Plus")
+```
+
+#### DimDate
+From the `DimDate` table only the `FullDateAlternateKey` field was included, and renamed as `Date`.  to simplify the time-based analysis. 
+
+Several calculated columns were generated to support trend exploration, period segmentation, and dashboard filtering:
+- `Year`: Extracted using Year([Date]) and formatted as an Integer-type variable. Only data from 2011 onward was included, excluding 2009 and 2010 from the analysis.
+- `Month Number`: Derived using Date.Month([Date]) to support chronological sorting, formatted as Integer.
+- `Month Name`: Created with Date.MonthName([Date]) and truncated to the first three characters (e.g. Jan, Feb, Mar), formatted as Text-type.
+- `Day Name`: Obtained via Date.DayOfWeekName([Date]) and shortened to three-letter labels (e.g. Mon, Tue, Wed), formatted as Text.
+- `WeekTypes`: A conditional text column categorising the day as either Weekend or Weekday:
+```
+if [Day Name] = "Sun" then "Weekend"
+else if [Day Name] = "Sat" then "Weekend"
+else "Weekday"
+```
+- `Quarter`: Generated using Date.QuarterOfYear([Date]), formatted as Integer with a prefix to display in dashboard visuals as Qtr-1, Qtr-2, Qtr-3, or Qtr-4.
+- `DayNumber`: Extracted using Date.DayOfWeek([Date]), formatted as Integer to support ordering of weekdays in charts and slicers.
+
+
+#### DimProduct
+The analysis incorporated these columns from the `DimProduct` dataset:
+- `ProductKey`
+- `EnglishProductName` (renamed as `ProductName`).
+- `Color`
+
+Missing values in the `Color` column were replaced with the label `Unspecified` to ensure consistency in product categorisation and visual filtering.
+
+#### DimGeography
+Key geographical fields were extracted from `DimGeography` to enable location-based insights:
+- `City` – Provides local-level geographical context.
+- `EnglishCountryRegionName` – Renamed as `Country` for clarity and consistency.
+- `SalesTerritoryKey` – Enabled connection to higher-level territorial classification.
+
+#### DimSalesTerritory
+The following fields were retained from the `DimSalesTerritory` table to support regional analysis:
+`SalesTerritoryKey`,	`SalesTerritoryAlternateKey`,	`SalesTerritoryRegion`,	`SalesTerritoryCountry`,	and `SalesTerritoryGroup`. 
+
+All entries containing `NA` values were excluded to ensure consistency and accuracy in territorial segmentation.
