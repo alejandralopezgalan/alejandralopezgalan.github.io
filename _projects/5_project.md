@@ -27,8 +27,7 @@ Image from [storyset](https://storyset.com/illustration/ecommerce-web-page/amico
 - [Executive Summary](#executive-summary)
   - [Primary Goal](#primary-goal)
   - [Solution](#solution)
-  - [Key Findings](#key-findings)
-  - [Recommendations](#recommendations)
+  - [Key Findings and Recommendations](#key-findings-and-recommendations)
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
@@ -60,20 +59,53 @@ This project delivers a comprehensive Excel dashboard tailored for sales data an
 - Structured insights to support business-oriented decision-making.
 - A clear demonstration of analytical thinking and visualisation techniques in Excel.
 
-### Key Findings
-- Consistent Growth: Revenue increased steadily, peaking at over $101M in 2007 and 2008.
-- Product Profitability: Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits.
-- Seasonal Peaks: Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.
-- Weekday Advantage: Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year.
-- Customer Drivers: The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.
-- Geographic Focus: Australia and the United States accounted for over 60% of total profit.
+### Key Findings and Recommendations
+<table>
+    <thead>
+        <tr>
+            <th>Finding</th>
+            <th>Recommendation</th>
+            <th>Plot</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Consistent Growth:</b> Revenue increased steadily, peaking at over $101M in 2007 and 2008.</td>
+            <td><b>Analyase factors behind 2007–2008 peaks</b> to inform future revenue strategy.</td>
+            <td><img src="assets/img/Project5-Revenue2007-2008.png"></img></td>
+        </tr>
+        <tr>
+            <td><b>Product Profitability:</b> Premium items (priced above $150), particularly Road-150 Red and Mountain-200, consistently drove high profits.</td>
+            <td><b>Refine product strategy by prioritising premium, high-margin items</b> such as Road-150 Red and Mountain-200. <br>
+Consider rationalising the SKU portfolio to eliminate low-profit contributors and enhance overall profitability </td>
+            <td><img src="assets/img/Project5-Product-Profitability.png"></img></td>
+        </tr>
+        <tr>
+            <td><b>Seasonal Peaks:</b> Profit concentration occurred mid-year (May–June) and year-end (October–December), varying by year.</td>
+            <td rowspan=2><b>Optimise campaign scheduling</b> by aligning marketing efforts with observed profitability peaks — mid-year (May–June), year-end (October–December), and high-performing weekdays, particularly Thursdays. <br>
+This timing strategy enhances impact and revenue potential. </td>
+            <td><img src="assets/img/Project5-Seasonal-Peaks.png"></img> </td>
+        </tr>
+        <tr>
+            <td><b>Weekday Advantage:</b> Weekdays contributed more than 70% of profit across all four years, with Thursday ranking in the top 3 every year. </td>
+          <td><img src="assets/img/Project5-Weekday.png"></img></td>
+        </tr>
+        <tr>
+            <td> <b>Customer Drivers:</b> The 50+ age group generated nearly half of total customer profit, and gender impact was nearly balanced.</td>
+            <td><b>Enhance Customer Segmentation:</b> Target older customers with tailored promotions and loyalty benefits. <br>
+Given gender neutrality in profit distribution, campaigns can focus on shared value drivers rather than gender-specific messaging. </td>
+            <td><img src="assets/img/Project5-age_group.png"></td>
+        </tr>
+        <tr> 
+            <td><b>Geographic Focus:</b> Australia and the United States accounted for over 60% of total profit.</td>
+            <td><b>Strengthen regional strategy</b> by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. <br>
+Focused efforts in these regions can amplify revenue growth and market share. </td>
+            <td><img src="assets/img/Projct5-au-usa.png"></td>
+        </tr>
+    </tbody>
+</table>
 
-### Recommendations
-- Optimise Product Strategy: Prioritise high-margin items and streamline low-performing SKUs (Stock Keeping Unit).
-- Align Campaign Timing: Schedule marketing around seasonal and weekday profit peaks.
-- Enhance Customer Segmentation: Target older customers with tailored promotions and loyalty benefits.
-- Expand Regional Efforts: Invest further in high-performing markets like Australia and the U.S.
-- Reward Top Customers: Establish retention programmes for high-profit individual buyers.
+
 
 ## Introduction
 ### Business Problem
@@ -307,7 +339,7 @@ Key Components:
 - Colour segmentation: Red products were top performers in 2005 and 2006, while black variants led in 2007 and 2008.
 - Inventory scope: Sold products ranged from 25 in 2005 to 102 in 2008, suggesting opportunities for SKU optimisation and targeted product marketing.
 
-### Customer Demographics & Geography
+### Customer Demographics and Geography
 - Age-based profitability: Customers aged 50+ generated at least 39% of total profit during the analysed period.
 - Gender contribution: Profit was nearly evenly split between male and female customers, with a slight edge toward female profitability.
 - Geographic distribution: Australia and the United States consistently ranked as the top-performing regions, contributing over 60% of total customer profit.
