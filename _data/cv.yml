@@ -13,6 +13,8 @@
       value: <a href="https://www.linkedin.com/in/alejandralopezgalan/">Profile</a>
     - name: Github
       value: <a href="https://github.com/alejandralopezgalan">My Github</a> 
+    - name: Projects
+      value: <a href="https://alejandralopezgalan.github.io/projects/">Check out my Data Analysis Projects here</a>
     - name: Learning Portfolio
       value: <a href="https://www.datacamp.com/portfolio/alejandralopezgalan">DataCamp portfolio and learning journey</a>
 
@@ -36,7 +38,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: Master in Analytics and Business Intelligence
+    - title: Master’s in Analytics and Business Intelligence
       institution: Universidad Tecnologica de Mexico 
       year: 2026
     
@@ -57,7 +59,7 @@
         - Statistical analysis (descriptive, predictive, parametric, and non-parametric)
     - title: Data Management
       items:
-        - PostgreSQL
+        - SQL
         - Spreadsheets (Excel and Google Sheets)
     - title: Data visualization
       items:
@@ -69,4 +71,4 @@
   type: list
   contents:
     - <u>Hobbies:</u> Gaming, reading LGBTIQ+ and fantasy novels, watching movies, documentaries, and TV series.
-    - <u>Sports:</u> Gym, table tennis, tennis, futbol
+    - <u>Sports:</u> Gym, boxing, tennis
