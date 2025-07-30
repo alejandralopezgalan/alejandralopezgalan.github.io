@@ -6,47 +6,47 @@
     - name: Email
       value: lopez.galan.alejandra@gmail.com
     - name: Summary
-      value: Highly motivated and results-oriented PhD graduate with a strong foundation in data analysis, visualization, and research methodologies. Eager to leverage expertise in SQL, data visualization, Python programming, and statistical analysis to transition into a Data Analyst role. Skilled in data collection, cleaning, and manipulation, with a passion for uncovering insights from complex datasets.
+      value: Data Analyst transitioning from scientific research and education, currently pursuing a Master’s in Analytics and Business Intelligence. Experienced in transforming complex datasets into clear dashboards and actionable insights using Power BI, SQL, and Excel. Strong communication skills in English and Spanish, with a keen interest in stakeholder engagement and continuous process improvement through automation and data visualization.
     - name: Languages
-      value: Spanish, and English
+      value: Spanish (Native), and English
     - name: LinkedIn
       value: <a href="https://www.linkedin.com/in/alejandralopezgalan/">Profile</a>
+    - name: Github
+      value: <a href="https://github.com/alejandralopezgalan">My Github</a> 
     - name: Learning Portfolio
       value: <a href="https://www.datacamp.com/portfolio/alejandralopezgalan">DataCamp portfolio and learning journey</a>
-    - name: Github
-      value: <a href="https://github.com/alejandralopezgalan">My Github</a>
+    - name: Projects
+      value: <a href="https://alejandralopezgalan.github.io/projects/">Explore My Data Analysis Portfolio</a>  
 
 - title: Experience
   type: time_table
   contents:
-    - title: High School Science Teacher
+    - title: Science & Critical Thinking Teacher
       institution: Instituto Blaise Pascale. Mexico
-      year: 05/2022 - Current
+      year: 06/2021 - Current
       description:
-        - Taught Geography, Ecology, and Critical Thinking to high school students. 
-        - Improved student performance by an average of 10% through engaging lectures and interactive discussions, fostering a positive learning environment that encouraged independent thought and problem-solving skills.
+        - Promoted analytical thinking and data-driven problem solving in classroom settings.
+        - Designed learning activities focused on data interpretation and evidence-based decision-making.
 
-    - title: Research Assistant
-      institution: Queensland Brain Institute. The University of Queensland. Australia
-      year: 01/2016 - 01/2022
+    - title: Academic Tutor
+      institution: School of Biological Sciences. The University of Queensland. Australia
+      year: 07/2017 - 10/2018
       description:
-        - Demonstrated expertise in R programming, statistical analysis, and data visualization through a research project, culminating in two peer-reviewed publications.
-
-    - title: Laboratory Manager
-      institution: Universidad del Mar. Mexico
-      year: 01/2014 - 02/2015
-      description:
-        - Supported research projects by managing finances, conducting experiments, analysing ecological data (descriptive statistics, regressions, correlations, ANOVAs, cluster analysis), and maintaining laboratory equipment.
-        - Mentored and trained 25+ students in laboratory techniques.
+        - Supported biology students in analysing experimental data and writing scientific reports.
+        - Facilitated the development of data interpretation and technical communication skills.
 
 - title: Education
   type: time_table
   contents:
-    - title: Doctor of Philosophy. Neuroethology
+  - title: Master’s in Analytics and Business Intelligence
+      institution: Universidad Tecnológica de México 
+      year: 2026
+    
+    - title: Doctor of Philosophy in Marine Sciences
       institution: Queensland Brain Institute. The University of Queensland. Australia
       year: 2020
 
-    - title: Bachelor of Science. Marine Biology
+    - title: Bachelor of Science in Marine Biology
       institution: Universidad del Mar. Mexico
       year: 2014
 
@@ -65,6 +65,7 @@
       items:
         - PowerBI
         - RStudio
+        - Tableau
 
 - title: Other Interests
   type: list
