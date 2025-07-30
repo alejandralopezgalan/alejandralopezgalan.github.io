@@ -36,7 +36,7 @@
 - title: Education
   type: time_table
   contents:
-  - title: Master in Analytics and Business Intelligence
+    - title: Master in Analytics and Business Intelligence
       institution: Universidad Tecnologica de Mexico 
       year: 2026
     
