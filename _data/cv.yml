@@ -15,8 +15,6 @@
       value: <a href="https://github.com/alejandralopezgalan">My Github</a> 
     - name: Learning Portfolio
       value: <a href="https://www.datacamp.com/portfolio/alejandralopezgalan">DataCamp portfolio and learning journey</a>
-    - name: Projects
-      value: <a href="https://alejandralopezgalan.github.io/projects/">Explore My Data Analysis Portfolio</a>  
 
 - title: Experience
   type: time_table
