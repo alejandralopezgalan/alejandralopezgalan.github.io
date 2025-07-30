@@ -29,8 +29,7 @@ Image from [storyset](https://storyset.com/search?q=online%20shopping)
 - [Executive Summary](#executive-summary)
   - [Primary Goal](#primary-goal)
   - [Solution](#solution)
-  - [Key Findings](#key-findings)
-  - [Recommendations](#recommendations)
+  - [Key Findings and Recommendations](#key-findings-and-recommendations)
 - [Introduction](#introduction)
   - [Business Problem](#business-problem)
   - [Goals](#goals)
@@ -63,20 +62,50 @@ To enable data-driven decision-making, an interactive dashboard will be develope
 - Regional performance breakdowns
 The dashboard will empower users to detect patterns quickly, monitor growth drivers, and remedy inefficiencies, ultimately supporting improved strategic outcomes.
 
-### Key Findings
-- Between 2011–2014, total sales reached $12,642,905 USD across 25,035 unique orders, with an average order value of $505.01 USD.
-- While overall annual growth was substantial (+90% over three years), no new customers were acquired—potentially due to dataset constraints or insufficient outreach.
-- A recurring Q4 downturn was identified each year, followed by a rebound in early Q1.
-- Top-performing regions included Asia-Pacific (APAC), United States (US), and Europe (EU). Within these, the US, Australia, and France led in order volume.
-- Customers favoured standard class shipping due to its affordability, and consistently selected practical products such as chairs, phones, and storage items.
-- The majority of purchases were made by individual consumers, rather than businesses or organisations.
-
-### Recommendations
-- **Customer Acquisition:** Introduce targeted marketing campaigns and referral incentives in high-performing regions (US, Australia, France) to attract new customers.
-- **Seasonal Sales Stability:** Address Q4 slumps with early festive promotions, bundled top-selling products, and seasonal marketing efforts.
-- **Shipping & Inventory Strategy:** Ensure availability for high-demand categories and amplify the benefits of standard class shipping through loyalty rewards.
-- **Regional Optimisation:** Strengthen outreach in core markets (APAC, US, EU) via tailored promotions and explore expansion into nearby emerging markets such as Latin America or Eastern Europe.
-- **Customer Retention:** Implement personalised loyalty tiers based on purchasing behaviour, offer customised product recommendations, and improve post-purchase support to encourage repeat business.
+### Key Findings and Recommendations
+### Key Findings and Recommendations
+<table>
+    <thead>
+        <tr>
+            <th>Finding</th>
+            <th>Recommendation</th>
+            <th>Plot</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Between 2011–2014, total sales reached $12,642,905 USD across 25,035 unique orders, with an average order value of $505.01 USD.</td>
+            <td>Examine if order values or volumes spike during specific periods to align promotions or inventory planning with demand cycles.</td>
+            <td>{% include figure.liquid loading="eager" path="assets/img/project3_finding1.png" class="img-fluid rounded z-depth-1" %}</td>
+        </tr>
+        <tr>
+            <td>While overall annual growth was substantial (+90% over three years), no new customers were acquired—potentially due to dataset constraints or insufficient outreach.</td>
+            <td>Investigate the dataset’s scope and ensure customer ID tracking is accurate. Missing identifiers may falsely suggest zero acquisition.</td>
+            <td>{% include figure.liquid loading="eager" path="assets/img/project3_finding2.png" class="img-fluid rounded z-depth-1" %}</td>
+        </tr>
+        <tr>
+            <td>A recurring Q4 downturn was identified each year, followed by a rebound in early Q1.</td>
+            <td>Address Q4 slumps with early festive promotions, bundled top-selling products, and seasonal marketing efforts. </td>
+            <td>{% include figure.liquid loading="eager" path="assets/img/project3_finding3.png" class="img-fluid rounded z-depth-1" %}</td>
+        </tr>
+        <tr>
+            <td>Top-performing regions included Asia-Pacific (APAC), United States (US), and Europe (EU). Within these, the US, Australia, and France led in order volume.</td>
+            <td>Introduce targeted marketing campaigns and referral incentives in high-performing regions (US, Australia, France) to attract new customers.<br> 
+              Strengthen outreach in core markets (APAC, US, EU) via tailored promotions and explore expansion into nearby emerging markets such as Latin America or Eastern Europe.</td>
+           <td>{% include figure.liquid loading="eager" path="assets/img/project3_finding4.png" class="img-fluid rounded z-depth-1" %}</td>
+        </tr>
+        <tr>
+            <td>Customers favoured standard class shipping due to its affordability, and consistently selected practical products such as chairs, phones, and storage items.</td>
+            <td>Ensure availability for high-demand categories and amplify the benefits of standard class shipping through loyalty rewards.</td>
+            <td>{% include figure.liquid loading="eager" path="assets/img/project3_finding5.png" class="img-fluid rounded z-depth-1" %}</td>
+        </tr>
+        <tr> 
+            <td>The majority of purchases were made by individual consumers, rather than businesses or organisations.</td>
+            <td>Implement personalised loyalty tiers based on purchasing behaviour, offer customised product recommendations, and improve post-purchase support to encourage repeat business. </td>
+            <td>{% include figure.liquid loading="eager" path="assets/img/project3_finding6.png" class="img-fluid rounded z-depth-1" %}</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Introduction
 This analysis tackles core business challenges through the strategic interpretation of sales data. By leveraging customer segmentation, evaluating product performance, and exploring geographic trends, it identifies key growth levers and operational constraints. The aim is to develop bespoke strategies that enhance customer satisfaction, streamline operations, and drive profitability—laying the foundation for sustainable expansion through informed, data-led decision-making.
