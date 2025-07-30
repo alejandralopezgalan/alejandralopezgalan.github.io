@@ -4,7 +4,7 @@
     - name: Full Name
       value: Alejandra Lopez Galan
     - name: Email
-      value: lopez.galan.alejandra@gmail.com
+      value: <a href="mailto:lopez.galan.alejandra@gmail.com">lopez.galan.alejandra@gmail.com</a>
     - name: Summary
       value: Data Analyst transitioning from scientific research and education, currently pursuing a Master’s in Analytics and Business Intelligence. Experienced in transforming complex datasets into clear dashboards and actionable insights using Power BI, SQL, and Excel. Strong communication skills in English and Spanish, with a keen interest in stakeholder engagement and continuous process improvement through automation and data visualization.
     - name: Languages
