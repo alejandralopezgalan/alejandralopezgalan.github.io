@@ -76,7 +76,7 @@ Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, 
         </tr>
         <tr>
             <td> Reach out to the Fede Vigevani team to negotiate contracts within allocated budgets, kick off campaigns, track performance, review progress, gather insights, and optimise based on feedback from converted customers and each channel’s audiences.</td>
-            <td>{% include figure.liquid path="assets/img/project2_finding2.png" class="img-fluid rounded z-depth-1" %}</td>
+            <td>{% include figure.liquid max-width="480px" path="assets/img/project2_finding2.png" class="img-fluid rounded z-depth-1" %}</td>
         </tr>
         <tr>
 	    <td>Channels such as Masha y el Oso, YOLO AVENTURAS, and Badabun are recognised for their popularity and video views, showcasing their widespread influence in the region. </td>	
