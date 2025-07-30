@@ -65,7 +65,7 @@ Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, 
         <tr>
             <th>Finding</th>
             <th>Recommendation</th>
-            <th style="width:900px">; Plot</th>
+            <th style="width:3000px"> Plot</th>
         </tr>
     </thead>
     <tbody>
