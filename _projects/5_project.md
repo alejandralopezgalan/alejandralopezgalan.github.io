@@ -113,7 +113,7 @@ Given gender neutrality in profit distribution, campaigns can focus on shared va
             <td><b>Geographic Focus:</b> Australia and the United States accounted for over 60% of total profit.</td>
             <td><b>Strengthen regional strategy</b> by expanding investments in high-performing markets such as Australia and the United States, which collectively account for over 60% of total profit. <br>
 Focused efforts in these regions can amplify revenue growth and market share. </td>
-            <td><a href="assets/img/Projct5-au-usa.png" target="_blank"><img src="assets/img/Projct5-au-usa.png" class="img-fluid rounded z-depth-1"></a></td>
+            <td>{% include figure.liquid loading="eager" path="assets/img/Projct5-au-usa.png" class="img-fluid rounded z-depth-1" zoomable=true%}<a href="https://github.com/alejandralopezgalan/alejandralopezgalan.github.io/blob/master/assets/img/Projct5-au-usa.png"><Fig.5/a>
         </tr>
     </tbody>
 </table>
