@@ -105,7 +105,7 @@ Focused efforts in these regions can amplify revenue growth and market share. </
     </tbody>
 </table>
 
-
+{% include figure.liquid loading="eager" path="assets/img/Project5-Product-Profitability.png" class="img-fluid rounded z-depth-1" zoomable=true%}
 
 ## Introduction
 ### Business Problem
