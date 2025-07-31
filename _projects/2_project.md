@@ -65,7 +65,7 @@ Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, 
         <tr>
             <th>Finding</th>
             <th>Recommendation</th>
-            <th style="width:3000px"> Plot</th>
+            <th>Plot</th>
         </tr>
     </thead>
     <tbody>
@@ -75,7 +75,7 @@ Develop a dashboard to provide insights into the top Mexican YouTubers in 2024, 
             <td>{% include figure.liquid path="assets/img/project2_finding1.png" class="img-fluid rounded z-depth-1" %}</td>
         </tr>
         <tr>
-            <td> Reach out to the Fede Vigevani team to negotiate contracts within allocated budgets, kick off campaigns, track performance, review progress, gather insights, and optimise based on feedback from converted customers and each channel’s audiences.</td>
+            <td>Coordinate with the Fede Vigevani team to manage contracts, launch campaigns, track results, and refine strategies based on customer feedback.</td>
             <td>{% include figure.liquid path="assets/img/project2_finding2.png" class="img-fluid rounded z-depth-1" %}</td>
         </tr>
         <tr>
